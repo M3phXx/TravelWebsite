@@ -1,0 +1,163 @@
+/*
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+    max-height: 1200px;
+    background-color: rgb(15, 15, 15);
+}
+
+.backgroundContainer {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover
+}
+
+/*---------buttonBar----------*/
+.buttonContainer {
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.barButton {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 5px 10px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.buttonContainer:hover {
+    opacity: 0.6;
+}
+
+.barButton:hover {
+    opacity: 1;
+}
+
+
+.barButton a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gg {
+    display: flex;
+    display: inline-block;
+    color: white;
+    padding-left: 5px;
+}
+
+.gg-search {
+    background-color: aquamarine
+}
+
+/*-------------Kanji-------------*/
+.kanjiContainer {
+    padding: 80px 0px;
+}
+
+.kanjiImage {
+    width: 500px;
+    height: 150px;
+    padding-left: 10vw;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.kanjiImage img {
+    width: 40%;
+    height: 80%;
+}
+
+/*-------------Menu------------*/
+
+.menuContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 60px;
+    font-size: 2rem;
+    text-shadow: 0 0 3px #000000;
+}
+a {
+    text-decoration: none;
+}
+/*-------------MainBody------------*/
+.mainBodyContainer {
+    background-color: rgba(0, 255, 0, 0.1);
+    padding-top: 40px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+}
+
+.mainAsideLeft {
+    width: 25%;
+}
+
+.mainSection {
+    width: 50%;
+}
+
+.mainAsideRight {
+    width: 25%;
+}
+
+.mainAsideLeftBody,
+.mainCenter,
+.mainAsideRightBody {
+    box-sizing: content-box;
+    width: 90%;
+    /*height: 800px;*/
+    margin: 0px auto 20px;
+    text-align: center;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.animeVideos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    overflow: hidden;
+}
+.film {
+    width: 30%;
+    max-height: 80%;
+    margin: 10px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.animeVideos div iframe, .animeVideos div a img{
+    width: 100%;
+}
+.tytul {
+    text-align: center;
+    margin: 0px;
+}
+.mainHeader {
+    margin: 2px;
+    background-color: rgb(100, 20, 0);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/*-------------Footer------------*/
+.footer {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 2px #000000;
+    text-align: center;
+}
