@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="toDo" ondrop="drop(event)" ondragover="drop(event)">
+            <div id="title">Do zrobienia</div>
+            <button id="new" onclick="createNewTask()">Dodaj</button>
+            <div class="element updateElement" id="oskargosk" draggable="true"
+                ondragstart="drag(event)">
+                <h3>Oskar Gosk</h3>
+                <h4>Test jednostkowy na aplikacji: 'Mikołaj w radomiu'</h4>
+            </div>
+            <div class="element updateElement" id="katarzynaandrzejczyk" draggable="true"
+            ondragstart="drag(event)">
+            <h3>Katarzyna Andrzejczyk</h3>
+            <h4>Naprawić usterkę z komputerem w sali konferencyjnej: 'Vogue'</h4>
+        </div>
+        </div>
+        <div class="box inProgress" id="inProgressID" ondrop="drop(event)" ondragover="drop(event)">
+            <div id="title">W trakcie</div>
+            <div class="element updateElement" id="karolinaszymczyk" draggable="true"
+                ondragstart="drag(event)">
+                <h3>Karolina Szymczyk</h3>
+                <h4>Zdobyć API do nowego programi i zastosować JSON-a</h4>
+            </div>
+        </div>
+        <div class="box done" id="doneID" ondrop="drop(event)" ondragover="drop(event)">
+            <div id="title">Zrobione</div>
+            <div class="element updateElement" id="bartłomiejkowalski" draggable="true"
+                ondragstart="drag(event)">
+                <h3>Bartłomiej Kowalski</h3>
+                <h4>Napisać stronę internetową: Sklep obuwniczy'</h4>
+            </div>
+            <div class="element updateElement" id="adrzejchomicz" draggable="true"
+            ondragstart="drag(event)">
+            <h3>Andrzej Chomicz</h3>
+            <h4>Skoczyć do sklepu po 4 Pizze i 2 Cole : 2 x Salami 1x Z bekonem 1x Hawajska</h4>
+        </div>
+        </div>
+        <div class="box doc" id="docID">
+            <div class="label"><label for="tytul">Imię i Nazwisko</label></div>
+            <input type="text" name="tytul" id="tytul">
+            <div class="label"><label for="description">Opis</label></div>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <div>
+                <button id="save" onclick="saveTask(), createNewTask()">Zatwierdź</button>
+                <button id="exit" onclick="createNewTask()">Wyjdź</button>
+            </div>
+        </div>
+    </div>
+    <script src="javaScript.js"></script>
+</body>
+
+</html>
