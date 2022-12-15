@@ -100,8 +100,7 @@ a {
 .mainBodyContainer {
     background-color: rgba(0, 255, 0, 0.1);
     padding-top: 40px;
-    margin-top: 30px;
-    box-sizing: border-box; /* To sie przyda nie raz*/
+    margin-top: 30px; /* To sie przyda nie raz*/
     width: 100%;
     display: flex;
 }
@@ -120,8 +119,7 @@ a {
 
 .mainAsideLeftBody,
 .mainCenter,
-.mainAsideRightBody {
-    box-sizing: content-box; /* To sie przyda nie raz*/
+.mainAsideRightBody { /* To sie przyda nie raz*/
     width: 90%;
     /*height: 800px;*/
     margin: 0px auto 20px;
