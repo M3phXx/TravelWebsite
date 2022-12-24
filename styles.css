@@ -1,0 +1,33 @@
+.carousel-item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+@media(min-width: 576px) {
+    .carousel-item {
+        min-height: 14rem;
+    }
+}
+@media(min-width: 768px) {
+    .carousel-item {
+        min-height: 16rem;
+    }
+}
+@media(max-width: 576px) {
+    .carousel-item {
+        min-height: 12rem;
+    }
+}
+
+.ad1 {
+    background: url(images/clouds.jpg) no-repeat center center
+}
+
+.ad2 {
+    background: url(images/alpine.jpg) no-repeat center center
+}
+
+.ad3 {
+    background: url(images/panorama.jpg) no-repeat center center
+}

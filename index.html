@@ -3,121 +3,107 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://css.gg/search.css' rel='stylesheet'>
-    <link rel="stylesheet" href="onAnime.css">
-    <title>on-anime</title>
-</head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <div class="backgroundContainer">
-        <header>
-            <!--buttonBar-->
-            <div class="buttonContainer">
-                <button type="submit" class="barButton"><a href="">
-                        <div class="gg"><i class="gg-search"></i></div> Szukaj
-                    </a></button>
-                <button type="submit" class="barButton"><a href="">Zaloguj się</a></button>
-                <button type="submit" class="barButton"><a href="">Dołącz do nas</a></button>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img width="30px" height="30px" src="images/logo.png" alt=""> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                    <li class="nav-item active">
+                        <a href="#" aria-current="page" class="nav-link">Home</a> <!--aria-current (screenreader)-->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Artykuły</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sklep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Kontakt</a>
+                    </li>
+                </ul>
+                <form action="" class="d-flex">
+                    <input type="search" placeholder="Szukaj" aria-label="Szukaj" class="form-control mr-2">
+                    <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                </form>
             </div>
-            <!--Znak Kanji-->
-            <div class="kanjiContainer">
-                <div class="kanjiImage">
-                    <img src="images/kanji.png" alt="">
-                    <h1 class="">Społeczność fanów japońskiej animacji</h1>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="menuContainer">
-                    <div><a href="index.html">Strona</a></div>
-                    <div><a href="#">Artykuły</a></div>
-                    <div><a href="anime.html">Anime</a></div>
-                    <div><a href="download.html">Download</a></div>
-                </div>
-            </div>
-        </header>
-        <!--mainBody-->
-        <div class="mainBodyContainer">
-            <aside class="mainAsideLeft">
-                <div class="mainAsideLeftBody">
-                    <div class="mainAsideLeftBodyHeader">
-                        <h1 class="mainHeader">Header</h1>
-                    </div>
-                    <span>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet suscipit numquam odit quam,
-                            libero sint dolore eius in. Laudantium sint rerum laborum quasi nostrum ipsa, nihil impedit
-                            excepturi qui porro maiores enim ab iusto dolor, delectus soluta voluptates dolorem adipisci
-                            quae tempore facilis, ad officiis ullam. Non ut quisquam qui!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet suscipit numquam odit quam,
-                            libero sint dolore eius in. Laudantium sint rerum laborum quasi nostrum ipsa, nihil impedit
-                            excepturi qui porro maiores enim ab iusto dolor, delectus soluta voluptates dolorem adipisci
-                            quae tempore facilis, ad officiis ullam. Non ut quisquam qui!</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet suscipit numquam odit quam,
-                                libero sint dolore eius in. Laudantium sint rerum laborum quasi nostrum ipsa, nihil impedit
-                                excepturi qui porro maiores enim ab iusto dolor, delectus soluta voluptates dolorem adipisci
-                                quae tempore facilis, ad officiis ullam. Non ut quisquam qui!</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet suscipit numquam odit quam,
-                                libero sint dolore eius in. Laudantium sint rerum laborum quasi nostrum ipsa, nihil impedit
-                                excepturi qui porro maiores enim ab iusto dolor, delectus soluta voluptates dolorem adipisci
-                                quae tempore facilis, ad officiis ullam. Non ut quisquam qui!</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet suscipit numquam odit quam,
-                                    libero sint dolore eius in. Laudantium sint rerum laborum quasi nostrum ipsa, nihil impedit
-                                    excepturi qui porro maiores enim ab iusto dolor, delectus soluta voluptates dolorem adipisci
-                                    quae tempore facilis, ad officiis ullam. Non ut quisquam qui!</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet suscipit numquam odit quam,
-                                    libero sint dolore eius in. Laudantium sint rerum laborum quasi nostrum ipsa, nihil impedit
-                                    excepturi qui porro maiores enim ab iusto dolor, delectus soluta voluptates dolorem adipisci
-                                    quae tempore facilis, ad officiis ullam. Non ut quisquam qui!</p>
-                    </span>
-                </div>
-            </aside>
-            <section class="mainSection">
-                <div class="mainCenter">
-                    <div class="mainCenterHeader">
-                        <h1 class="mainHeader">najczęściej czytane</h1>
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima sunt odit ex autem, quam
-                        deserunt voluptas officiis ratione numquam incidunt expedita dolore inventore ea, soluta saepe
-                        ab cum voluptates beatae assumenda itaque laborum nulla! Accusamus ea ducimus placeat amet
-                        optio.</p>
-                </div>
-                <div class="mainCenter">
-                    <div class="mainCenterHeader">
-                        <h1 class="mainHeader">najczęściej czytane</h1>
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima sunt odit ex autem, quam
-                        deserunt voluptas officiis ratione numquam incidunt expedita dolore inventore ea, soluta saepe
-                        ab cum voluptates beatae assumenda itaque laborum nulla! Accusamus ea ducimus placeat amet
-                        optio.</p>
-                </div>
-            </section>
-            <aside class="mainAsideRight">
-                <div class="mainAsideRightBody">
-                    <div class="mainAsideLeftBodyHeader">
-                        <h1 class="mainHeader">Header</h1>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius aspernatur provident nostrum
-                        dolore esse suscipit sint repellat perspiciatis mollitia in, reprehenderit quidem tenetur
-                        perferendis soluta.</p>
-                </div>
-                <div class="mainAsideRightBody">
-                    <div class="mainAsideLeftBodyHeader">
-                        <h1 class="mainHeader">Header</h1>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius aspernatur provident nostrum
-                        dolore esse suscipit sint repellat perspiciatis mollitia in, reprehenderit quidem tenetur
-                        perferendis soluta.</p>
-                </div>
-            </aside>
         </div>
-        <!--footer-->
-        <div class="footer">
-            <h1>Projekt strony rozpoczęty w 2022</h1>
-            <p>Dla każdego fana dobrej animacji</p>
+    </nav>
+    
+<main class="container">
+    <header>
+        <div id="topCarousel" data-ride="carousel" class="mt-3 carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#topCarousel" data-slide-to="0"></li>
+                <li data-target="#topCarousel" data-slide-to="1"></li>
+                <li data-target="#topCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item rounded ad1 active">
+                    <div class="carousel-caption text-light">
+                        <h3>Gdzie wyjechać na wakacje ?</h3>
+                    </div>
+                </div>
+                <div class="carousel-item rounded ad2">
+                    <div class="carousel-caption text-light">
+                        <h4>Jak zaplanować podróż ?</h4>
+                        <p>Miejsce, bilety, wydatki.</p>
+                        <div class="data-caption">19 luty</div>
+                    </div>
+                </div>
+                <div class="carousel-item rounded ad3">
+                    <div class="carousel-caption text-light">
+                        <h4>Życie w mieście</h4>
+                        <p>Plusy oraz minusy</p>
+                        <div class="data-caption">15 kwiecień</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
+</main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+<!--    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img width="30px" height="30px" src="images/logo.png" alt=""> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+            <li class="nav-item active">
+                <a href="#" aria-current class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Artykuły</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Sklep</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+        </div>
+    </nav>-->
