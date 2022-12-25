@@ -24,6 +24,18 @@
     height: 200px;
     border-radius: 2px;
 }
+
+.form-box {
+    width: 20rem;
+}
+
+#newsletter-box {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-image: url(images/clouds2.jpg);
+}
+
 /*->->->->->->->media<-<-<-<-<-<-<-*/
 @media(max-width: 576px) {
 
@@ -45,6 +57,7 @@
     .cardsContainer {
         width: 80%;
     }
+
     #img {
         width: 100% !important;
     }
