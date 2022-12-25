@@ -3,28 +3,53 @@
     -moz-background-size: cover;
     background-size: cover;
 }
+
 .navbar {
     background-color: rgb(41, 41, 41);
 }
+
+.ad1 {
+    background: url(images/clouds.jpg) no-repeat center center;
+}
+
+.ad2 {
+    background: url(images/alpine.jpg) no-repeat center center;
+}
+
+.ad3 {
+    background: url(images/panorama.jpg) no-repeat center center;
+}
+
+.cart-img-top {
+    height: 200px;
+    border-radius: 3px;
+}
+#dupa {
+    width: 100% !important;
+}
 /*->->->->->->->media<-<-<-<-<-<-<-*/
 @media(max-width: 576px) {
-    .headerContainer, #topCarousel{
+
+    .headerContainer,
+    #topCarousel {
         padding: 0;
-        margin-top: 0 !important; 
+        margin-top: 0 !important;
     }
+
     .cardContainer {
         max-height: 750px;
-        overflow:scroll;
+        overflow: scroll;
     }
+
     .carousel-item {
         min-height: 12rem;
     }
+
     .cardsContainer {
         width: 80%;
     }
-    #dupa {
-    }
 }
+
 @media(min-width: 576px) {
     .carousel-item {
         min-height: 14rem;
@@ -44,34 +69,26 @@
         padding-right: 50px;
     }
 }
-/*->->->->->->->|<-<-<-<-<-<-<-*/
-.ad1 {
-    background: url(images/clouds.jpg) no-repeat center center;
-}
 
-.ad2 {
-    background: url(images/alpine.jpg) no-repeat center center;
-}
-
-.ad3 {
-    background: url(images/panorama.jpg) no-repeat center center;
-}
-.cart-img-top {
-    height: 200px;
-    border-radius: 3px;
-}
 /*->->->->->->->webkit-scroll<-<-<-<-<-<-<-*/
 * {
-    scrollbar-width: thin; /*nowe*/
+    scrollbar-width: thin;
+    /*nowe*/
     scrollbar-color: black gray;
 }
-*::-webkit-scrollbar { /*  */
+
+*::-webkit-scrollbar {
+    /*  */
     width: 12px;
 }
-*::-webkit-scrollbar-track { /*  */
+
+*::-webkit-scrollbar-track {
+    /*  */
     background-color: gray;
 }
-*::-webkit-scrollbar-thumb { /*  */
-background-color: #3f3f3f;
-border-radius: 20px;
+
+*::-webkit-scrollbar-thumb {
+    /*  */
+    background-color: #3f3f3f;
+    border-radius: 20px;
 }
