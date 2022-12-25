@@ -29,7 +29,6 @@
         min-height: 12rem;
     }
 }
-
 .ad1 {
     background: url(images/clouds.jpg) no-repeat center center;
 }
@@ -40,4 +39,7 @@
 
 .ad3 {
     background: url(images/panorama.jpg) no-repeat center center;
+}
+.cart-img-top {
+    height: 200px;
 }
