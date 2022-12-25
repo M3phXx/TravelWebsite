@@ -1,3 +1,6 @@
+body {
+    background-color: rgb(225, 225, 225);
+}
 .carousel-item {
     -webkit-background-size: cover;
     -moz-background-size: cover;

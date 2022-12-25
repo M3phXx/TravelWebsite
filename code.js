@@ -1,5 +1,5 @@
 function darkTheme(e) {
-    document.body.classList = "bg-dark";
+    document.body.style.backgroundColor = 'rgb(' + 30 + ',' + 30 + ',' + 30 + ')';
     let pCon = document.getElementById("postContainer").style.color = "white";
     let cards = document.getElementsByClassName("card");
     for(var i = 0; i < cards.length; i++) {
@@ -9,7 +9,7 @@ function darkTheme(e) {
     e.preventDefault();
 }
 function lightTheme(e) {
-    document.body.classList = "bg-light";
+    document.body.style.backgroundColor = 'rgb(' + 225 + ',' + 225 + ',' + 225 + ')';
     let pCon = document.getElementById("postContainer").style.color = "black";
     let cards = document.getElementsByClassName("card");
     for(var i = 0; i < cards.length; i++) {
