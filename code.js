@@ -3,6 +3,6 @@ function darkTheme(e) {
     e.preventDefault();
 }
 function lightTheme(e) {
-    document.body.classList = "";
+    document.body.classList = "bg-light";
     e.preventDefault();
 }

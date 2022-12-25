@@ -6,6 +6,7 @@
 .navbar {
     background-color: rgb(41, 41, 41);
 }
+/*->->->->->->->media<-<-<-<-<-<-<-*/
 @media(max-width: 576px) {
     .headerContainer, #topCarousel{
         padding: 0;
@@ -38,6 +39,7 @@
         padding-right: 50px;
     }
 }
+/*->->->->->->->|<-<-<-<-<-<-<-*/
 .ad1 {
     background: url(images/clouds.jpg) no-repeat center center;
 }
@@ -53,6 +55,7 @@
     height: 200px;
     border-radius: 3px;
 }
+/*->->->->->->->webkit-scroll<-<-<-<-<-<-<-*/
 * {
     scrollbar-width: thin; /*nowe*/
     scrollbar-color: black gray;
