@@ -35,7 +35,6 @@
 
     .cardContainer {
         max-height: 750px;
-        overflow: scroll;
     }
 
     .carousel-item {
@@ -43,7 +42,7 @@
     }
 
     .cardsContainer {
-        width: 80%;
+        width: 100%;
     }
     #img {
         width: 100% !important;
@@ -71,24 +70,3 @@
 }
 
 /*->->->->->->->webkit-scroll<-<-<-<-<-<-<-*/
-* {
-    scrollbar-width: thin;
-    /*nowe*/
-    scrollbar-color: black gray;
-}
-
-*::-webkit-scrollbar {
-    /*  */
-    width: 12px;
-}
-
-*::-webkit-scrollbar-track {
-    /*  */
-    background-color: gray;
-}
-
-*::-webkit-scrollbar-thumb {
-    /*  */
-    background-color: #3f3f3f;
-    border-radius: 20px;
-}
