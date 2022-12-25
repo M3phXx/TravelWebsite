@@ -22,6 +22,8 @@
     .cardsContainer {
         width: 80%;
     }
+    #dupa {
+    }
 }
 @media(min-width: 576px) {
     .carousel-item {
