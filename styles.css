@@ -19,6 +19,9 @@
     .carousel-item {
         min-height: 12rem;
     }
+    .cardsContainer {
+        width: 80%;
+    }
 }
 @media(min-width: 576px) {
     .carousel-item {
