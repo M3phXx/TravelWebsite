@@ -3,7 +3,12 @@
     -moz-background-size: cover;
     background-size: cover;
 }
-
+@media(max-width: 576px) {
+    .headerContainer, #topCarousel{
+        padding: 0;
+        margin-top: 0 !important; 
+    }
+}
 @media(min-width: 576px) {
     .carousel-item {
         min-height: 14rem;
@@ -29,6 +34,7 @@
         min-height: 12rem;
     }
 }
+
 .ad1 {
     background: url(images/clouds.jpg) no-repeat center center;
 }
@@ -40,6 +46,11 @@
 .ad3 {
     background: url(images/panorama.jpg) no-repeat center center;
 }
+.card {
+    border-radius: 20px 20px 0px 0px;
+
+}
 .cart-img-top {
     height: 200px;
+    border-radius: 20px 20px 0px 0px;
 }
