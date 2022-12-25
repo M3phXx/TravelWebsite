@@ -11,6 +11,13 @@
         padding: 0;
         margin-top: 0 !important; 
     }
+    .cardContainer {
+        max-height: 750px;
+        overflow:scroll;
+    }
+    .carousel-item {
+        min-height: 12rem;
+    }
 }
 @media(min-width: 576px) {
     .carousel-item {
@@ -31,13 +38,6 @@
         padding-right: 50px;
     }
 }
-
-@media(max-width: 576px) {
-    .carousel-item {
-        min-height: 12rem;
-    }
-}
-
 .ad1 {
     background: url(images/clouds.jpg) no-repeat center center;
 }
@@ -52,4 +52,18 @@
 .cart-img-top {
     height: 200px;
     border-radius: 3px;
+}
+* {
+    scrollbar-width: thin; /*nowe*/
+    scrollbar-color: black gray;
+}
+*::-webkit-scrollbar { /*  */
+    width: 12px;
+}
+*::-webkit-scrollbar-track { /*  */
+    background-color: gray;
+}
+*::-webkit-scrollbar-thumb { /*  */
+background-color: #3f3f3f;
+border-radius: 20px;
 }
