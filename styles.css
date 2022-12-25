@@ -3,6 +3,9 @@
     -moz-background-size: cover;
     background-size: cover;
 }
+.navbar {
+    background-color: rgb(41, 41, 41);
+}
 @media(max-width: 576px) {
     .headerContainer, #topCarousel{
         padding: 0;
@@ -48,4 +51,5 @@
 }
 .cart-img-top {
     height: 200px;
+    border-radius: 3px;
 }
