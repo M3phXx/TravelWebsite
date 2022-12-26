@@ -41,6 +41,18 @@ body {
     display: flex;
     flex-direction: column;
 }
+#login, #register {
+    text-decoration: none;
+}
+#relativeImage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#absoluteTransparent {
+    position: absolute;
+    top: -28px;
+}
 /*->->->->->->->media<-<-<-<-<-<-<-*/
 @media(max-width: 576px) {
 
