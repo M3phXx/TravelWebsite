@@ -13,37 +13,26 @@
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container-fluid">
+        <div class="container-fluid" >
             <a class="navbar-brand"><img width="30px" height="30px" src="images/logo.png" alt=""> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav mr-auto mb-2 mb-md-0">
-                    <li class="nav-item active">
-                        <a href="#" aria-current="page" class="nav-link">Home</a> <!--aria-current (screenreader)-->
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Artykuły</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Sklep</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Kontakt</a>
-                    </li>
+                <ul class="mr-auto mb-2 mb-md-0">
+
                 </ul>
                 <form action="" class="d-flex">
                     <input type="search" placeholder="Szukaj" aria-label="Szukaj" class="form-control mr-2">
-                    <button class="btn btn-outline-success mr-1" type="submit">Szukaj</button>
+                    <button class="btn btn-outline-success mr-1" type="submit" disabled>Szukaj</button>
                     <button data-toggle="modal" data-target="#modal2" class="btn btn-primary ml-1" type="button">
                         Zaloguj
                     </button>
                 </form>
                 <li class="nav-item">
                     <button onclick="darkTheme(event)"
-                        class="rounded mt-3 mb-2 bg-dark text-light border-light">D</button>
-                    <button onclick="lightTheme(event)" class="rounded mt-3 mb-2 border-light">L</button>
+                        class="rounded bg-dark text-light border-light">Dark</button>
+                    <button onclick="lightTheme(event)" class="rounded border-light">Light</button>
                 </li>
             </div>
         </div>

@@ -31,14 +31,16 @@ body {
 .form-box {
     width: 20rem;
 }
-
 #newsletter-box {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     background-image: url(images/lake.jpg);
 }
-
+#changeTheme {
+    display: flex;
+    flex-direction: column;
+}
 /*->->->->->->->media<-<-<-<-<-<-<-*/
 @media(max-width: 576px) {
 
