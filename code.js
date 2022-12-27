@@ -38,7 +38,6 @@ function checkInputs() {
     let emailValue = document.getElementById("inputEmail").value;
     let passwordBox = document.getElementById("inputPassword");
     let passwordValue = document.getElementById("inputPassword").value;
-    localStorage.setItem("login",);
 
     let checkBoxMoney = emailValue.indexOf("@");
     let checkBoxDot = emailValue.indexOf(".", checkBoxMoney);
