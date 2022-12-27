@@ -98,6 +98,46 @@ let cards = [
         describe: "Reach the tops",
         img: "images/mountainsTrip.jpg"
     },
+    {
+        name: "Balloon Pyramids",
+        describe: "Watch out for Pharaoh",
+        img: "images/balloonPyramids.jpg"
+    },
+    {
+        name: "Balloon Desert",
+        describe: "Hot adventure",
+        img: "images/balloonDesert.jpg"
+    },
+    {
+        name: "Forest House",
+        describe: "Close to nature",
+        img: "images/forestHouse.jpg"
+    },
+    {
+        name: "Forest Lake",
+        describe: "Beautiful Water",
+        img: "images/ForestLake.jpg"
+    },
+    {
+        name: "Mountain peak",
+        describe: "Don't go down!",
+        img: "images/Mountain-stone-peak.jpg"
+    },
+    {
+        name: "Animal Forest",
+        describe: "Animal friends",
+        img: "images/animalForest.jpg"
+    },
+    {
+        name: "Japan",
+        describe: "Tokyo",
+        img: "images/japan.jpg"
+    },
+    {
+        name: "Mountains",
+        describe: "Reach the tops",
+        img: "images/france.jpg"
+    },
 ]
 
 function addCards(newCards) {
