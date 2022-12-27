@@ -23,9 +23,11 @@
 
                 </ul>
                 <form action="" class="d-flex mt-3 mt-md-0">
-                    <input type="search" placeholder="Szukaj" aria-label="Szukaj" class="form-control mr-2">
-                    <button class="btn btn-outline-success mr-1" type="submit" disabled>Szukaj</button>
-                    <button data-toggle="modal" class="btn btn-primary ml-1" data-target="#modal2" type="button">
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-success">search</button>
+                      </div>
+                    <button data-toggle="modal" class="btn btn-primary ml-3" data-target="#modal2" type="button">
                         Zaloguj
                     </button>
                 </form>
@@ -269,7 +271,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary btn-block" type="submit">
+                            <button class="btn btn-primary btn-block" type="submit" >
                                 Zapisz mnie na newsletter
                             </button>
                         </div>
@@ -278,7 +280,7 @@
             </div>
         </div>
 
-        <div class="row mt-3">
+        <div class="row mt-3" id="bottomCards">
             <div class="col-sm-6">
                 <div class="border rounded row g-0 overflow-hidden shadow-sm position-relative">
                     <div class="col p-4 d-flex flex-column">
@@ -313,10 +315,33 @@
             </div>
         </div>
     </main>
-    <footer id="footer" class="text-light bg-dark">
+    <footer id="footer" class="text-light bg-dark mt-3">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5>Nazwa bloga</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, et.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5>Szybkie linki:</h5>
+                    <ul class="li"><a href="#">O nas</a></ul>
+                    <ul class="li"><a href="#">Artykuły</a></ul>
+                    <ul class="li"><a href="#">Regulamin</a></ul>
+                    <ul class="li"><a href="#">Kontakt</a></ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5>Kontakt</h5>
+                    <p><a href="mailto:admin@example.com">admin@example.com</a></p>
+                    <p>ul. Ujazdowska 0</p>
+                    <p>00-000 Warszawa</p>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12"></div>
+                <div class="col-12 text-center">
+                    Copyright by Blog. All rights reserved.
+                </div>
             </div>
         </div>
     </footer>
@@ -328,30 +353,4 @@
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
-
-<!--    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand"><img width="30px" height="30px" src="images/logo.png" alt=""> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav mr-auto mb-2 mb-md-0">
-            <li class="nav-item active">
-                <a href="#" aria-current class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Artykuły</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Sklep</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Kontakt</a>
-            </li>
-        </ul>
-    </div>
-        </div>
-    </nav>-->

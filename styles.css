@@ -1,6 +1,7 @@
 body {
     background-color: rgb(225, 225, 225);
 }
+/*->->->->->->->Class<-<-<-<-<-<-<-*/
 .carousel-item {
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -31,28 +32,38 @@ body {
 .form-box {
     width: 20rem;
 }
+footer a {
+    color: #aaaaab;
+}
+/*->->->->->->->ID<-<-<-<-<-<-<-*/
 #newsletter-box {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     background-image: url(images/lake.jpg);
 }
+
 #changeTheme {
     display: flex;
     flex-direction: column;
 }
-#login, #register {
+
+#login,
+#register {
     text-decoration: none;
 }
+
 #relativeImage {
     position: relative;
     display: flex;
     justify-content: center;
 }
+
 #absoluteTransparent {
     position: absolute;
     top: -28px;
 }
+
 /*->->->->->->->media<-<-<-<-<-<-<-*/
 @media(max-width: 576px) {
 
