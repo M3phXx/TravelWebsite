@@ -1,4 +1,5 @@
 window.onload = () => {
+    addCards(cards);
     if (localStorage.getItem("login")) {
         document.getElementById("inputEmail").value = localStorage.getItem("login");
         document.getElementById("inputCheckbox").checked = true;
@@ -15,10 +16,8 @@ window.onload = () => {
             let newsletterEmailDot = newsletterEmail.indexOf(".", newsletterEmailMonkey);
             if (newsletterEmailMonkey >= 0 && newsletterEmail.indexOf(".", newsletterEmailMonkey) >= 0 && !(newsletterEmail.indexOf("@", newsletterEmailMonkey + 1) >= 0) && !(newsletterEmail.indexOf(".", newsletterEmailDot + 1) >= 0)) {
                 form.classList.add("was-validated");
-                console.log("xD");
             }
             else {
-                console.log("xP");
                 form.classList.remove("was-validated");
             }
         });
@@ -32,7 +31,6 @@ function darkTheme(e) {
     for (var i = 0; i < cards.length; i++) {
         cards[i].style.border = "1px solid rgba(0,0,0,.875)";
     }
-    console.log(cards);
     e.preventDefault();
 }
 function lightTheme(e) {
@@ -76,8 +74,58 @@ function checkInputs() {
     else {
         passwordBox.style.border = "1px solid red";
     }
-    if (emailValue.indexOf(".", checkBoxMonkey) >= 0 && !(emailValue.indexOf("@", checkBoxMonkey + 1) >= 0) && !(emailValue.indexOf(".", checkBoxDot + 1) >= 0) && passwordValue.length > 5) {
+}
 
+let filteredCards = [];
+let cards = [
+    {
+        name: "Balloon flight",
+        describe: "Around the World",
+        img: "images/baloon.jpg"
+    },
+    {
+        name: "Desert island",
+        describe: "Tropical adventure",
+        img: "images/tropical.jpg"
+    },
+    {
+        name: "Monuments",
+        describe: "Back to the past",
+        img: "images/monuments.jpg"
+    },
+    {
+        name: "Mountains",
+        describe: "Reach the tops",
+        img: "images/mountainsTrip.jpg"
+    },
+]
+
+function addCards(newCards) {
+    document.getElementById("cards").innerText = "";
+    for (var i = 0; i < newCards.length; i++) {
+        document.getElementById("cards").innerHTML += `
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mt-3">
+            <img src=${newCards[i].img} alt="" class="cart-img-top">
+            <div class="card-body">
+                <h5 class="card-title">${newCards[i].name}</h5>
+                <p class="card-text">${newCards[i].describe}</p>
+                <a href="#" class="btn btn-primary">Czytaj więcej</a>
+            </div>
+        </div>
+    </div>
+        `;
     }
 }
+
+document.getElementById("searchInput").addEventListener("keyup", () => {
+    let searchInput = document.getElementById("searchInput").value.toLowerCase();
+
+    filteredCards = cards.filter(function (e) {
+        if (e.name.toLowerCase().includes(searchInput)) {
+            return e.name;
+        }
+    });
+    addCards(filteredCards);
+})
 
