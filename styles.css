@@ -42,6 +42,9 @@ a.disabled {
     text-decoration: none;
     color: #aaaaab;
 }
+.page-item {
+    cursor: default;
+}
 footer a {
     color: #aaaaab;
 }
