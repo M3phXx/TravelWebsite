@@ -32,6 +32,12 @@ body {
 .form-box {
     width: 20rem;
 }
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: #aaaaab;
+}
 footer a {
     color: #aaaaab;
 }
@@ -67,6 +73,10 @@ footer a {
     overflow: scroll;
     overflow-x: hidden;
     max-height: 720px;
+}
+#info {
+    text-decoration: none;
+    color: rgb(0, 105, 0);
 }
 /*->->->->->->->media<-<-<-<-<-<-<-*/
 @media(max-width: 576px) {
