@@ -8,7 +8,7 @@ body {
     background-size: cover;
 }
 
-.navbar {
+.navbar, #footer {
     background-color: rgb(44, 44, 44);
 }
 
@@ -63,7 +63,11 @@ footer a {
     position: absolute;
     top: -28px;
 }
-
+#cards {
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 720px;
+}
 /*->->->->->->->media<-<-<-<-<-<-<-*/
 @media(max-width: 576px) {
 

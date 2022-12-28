@@ -109,6 +109,11 @@ let cards = [
         img: "images/balloonDesert.jpg"
     },
     {
+        name: "Sea Waves",
+        describe: "Big waves",
+        img: "images/seaWaves.jpg"
+    },
+    {
         name: "Forest House",
         describe: "Close to nature",
         img: "images/forestHouse.jpg"
@@ -134,9 +139,14 @@ let cards = [
         img: "images/japan.jpg"
     },
     {
-        name: "Mountains",
-        describe: "Reach the tops",
+        name: "Paris",
+        describe: "Big City",
         img: "images/france.jpg"
+    },
+    {
+        name: "Sea Beach",
+        describe: "More Sand",
+        img: "images/seaBeach.jpg"
     },
 ]
 
