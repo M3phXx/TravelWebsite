@@ -145,7 +145,7 @@ let cards = [
     {
         name: "Forest Lake",
         describe: "Beautiful Water",
-        img: "images/ForestLake.jpg",
+        img: "images/forestLake.jpg",
         readMoretitle: "Forest Lake",
         readMoreBody: "purest source of water."
     },
