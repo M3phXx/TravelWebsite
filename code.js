@@ -196,7 +196,7 @@ function addCards(newCards) {
             <div class="card-body">
                 <h5 class="card-title">${newCards[i].name}</h5>
                 <p class="card-text">${newCards[i].describe}</p>
-                <button class="btn btn-primary" data-toggle="popover" title="${newCards[i].readMoretitle}" data-content="${newCards[i].readMoreBody}" id="readMore">Czytaj więcej</button>
+                <button class="btn btn-primary" data-toggle="popover" title="${newCards[i].readMoretitle}" data-content="${newCards[i].readMoreBody}" id="readMore">info</button>
             </div>
         </div>
     </div>
@@ -410,8 +410,8 @@ function changePage(pageNumber) {
             break;
     }
 }
-document.body.addEventListener('mouseover',function () {
+document.body.addEventListener('mouseover', function () {
     console.log("xD");
     $('.popover').popover('hide');
-  });
+});
 
