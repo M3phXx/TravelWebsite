@@ -22,6 +22,12 @@ window.onload = () => {
             }
         });
     });
+    /* Popovers */
+    let popoversNodes = document.querySelectorAll("[data-toggle='popover']");
+    let popovers = [];
+    for (const el of popoversNodes) {
+        popovers.push(new bootstrap.Popover(el));
+    }
 }
 function darkTheme(e) {
     document.body.style.backgroundColor = 'rgb(' + 30 + ',' + 30 + ',' + 30 + ')';
@@ -81,72 +87,100 @@ let cards = [
     {
         name: "Balloon flight",
         describe: "Around the World",
-        img: "images/baloon.jpg"
+        img: "images/baloon.jpg",
+        readMoretitle: "Balloon flight",
+        readMoreBody: "Flight above the clouds."
     },
     {
         name: "Desert island",
         describe: "Tropical adventure",
-        img: "images/tropical.jpg"
+        img: "images/tropical.jpg",
+        readMoretitle: "Desert island",
+        readMoreBody: "An amazing adventure, feel like a castaway."
     },
     {
         name: "Monuments",
         describe: "Back to the past",
-        img: "images/monuments.jpg"
+        img: "images/monuments.jpg",
+        readMoretitle: "Monuments",
+        readMoreBody: "If you love history, this trip is for you. An old castle full of ghosts."
     },
     {
         name: "Mountains",
         describe: "Reach the tops",
-        img: "images/mountainsTrip.jpg"
+        img: "images/mountainsTrip.jpg",
+        readMoretitle: "Mountains",
+        readMoreBody: "Do you like winter ? these mountains will bring you joy."
     },
     {
         name: "Balloon Pyramids",
         describe: "Watch out for Pharaoh",
-        img: "images/balloonPyramids.jpg"
+        img: "images/balloonPyramids.jpg",
+        readMoretitle: "Balloon Pyramids",
+        readMoreBody: "Egypt. The legendary place where the Pharaoh lives."
     },
     {
         name: "Balloon Desert",
         describe: "Hot adventure",
-        img: "images/balloonDesert.jpg"
+        img: "images/balloonDesert.jpg",
+        readMoretitle: "Balloon Desert",
+        readMoreBody: "A trip close to the sun and sand. Be sure to bring water."
     },
     {
         name: "Sea Waves",
         describe: "Big waves",
-        img: "images/seaWaves.jpg"
+        img: "images/seaWaves.jpg",
+        readMoretitle: "Sea Waves",
+        readMoreBody: "Feel like a real pirate! An expedition of landlubbers among the stormy waves."
     },
     {
         name: "Forest House",
         describe: "Close to nature",
-        img: "images/forestHouse.jpg"
+        img: "images/forestHouse.jpg",
+        readMoretitle: "Forest House",
+        readMoreBody: "Peace, quiet, fresh air. Attention! Ents live in the forest :)."
     },
     {
         name: "Forest Lake",
         describe: "Beautiful Water",
-        img: "images/ForestLake.jpg"
+        img: "images/ForestLake.jpg",
+        readMoretitle: "Forest Lake",
+        readMoreBody: "purest source of water."
     },
     {
         name: "Mountain peak",
         describe: "Don't go down!",
-        img: "images/Mountain-stone-peak.jpg"
+        img: "images/Mountain-stone-peak.jpg",
+        readMoretitle: "Mountain peak",
+        readMoreBody: "If you are not afraid, try to ride a few kilometers above the ground."
     },
     {
         name: "Animal Forest",
         describe: "Animal friends",
-        img: "images/animalForest.jpg"
+        img: "images/animalForest.jpg",
+        readMoretitle: "Animal Forest",
+        readMoreBody: "Wspaniałę zwierzaki, Prosimy nie dokarmiać."
     },
     {
         name: "Japan",
         describe: "Tokyo",
-        img: "images/japan.jpg"
+        img: "images/japan.jpg",
+        readMoretitle: "Japan",
+        readMoreBody: "Have you ever dreamed of a trip to Tokyo? check our offer."
     },
     {
         name: "Paris",
         describe: "Big City",
-        img: "images/france.jpg"
+        img: "images/france.jpg",
+        readMoretitle: "Paris",
+        readMoreBody: "Eiffel Tower"
     },
     {
         name: "Sea Beach",
         describe: "More Sand",
-        img: "images/seaBeach.jpg"
+        img: "images/seaBeach.jpg",
+        readMoretitle: "Sea Beach",
+        readMoreBody: "Storm, many adventures, puzzles. We have prepared many surprises!"
     },
 ]
 
@@ -160,7 +194,7 @@ function addCards(newCards) {
             <div class="card-body">
                 <h5 class="card-title">${newCards[i].name}</h5>
                 <p class="card-text">${newCards[i].describe}</p>
-                <a href="#" class="btn btn-primary">Czytaj więcej</a>
+                <button class="btn btn-primary" data-toggle="popover" title="${newCards[i].readMoretitle}" data-content="${newCards[i].readMoreBody}">Czytaj więcej</button>
             </div>
         </div>
     </div>
@@ -177,5 +211,89 @@ document.getElementById("searchInput").addEventListener("keyup", () => {
         }
     });
     addCards(filteredCards);
+    let popoversNodes = document.querySelectorAll("[data-toggle='popover']");
+    let popovers = [];
+    let xD = new bootstrap.Popover(el);
 })
+
+function changePage(pageNumber) {
+    let posts = document.getElementById("postContainer");
+    switch(pageNumber) {
+        case 1: {
+            posts.innerHTML = `<div class="blog-post">
+            <img src="images/post1Picture.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
+            <h4 class="blog-post-title">Przykładowy post</h4>
+            <p class="blog-post-date">10 stycznia <a href="#">Adam</a></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, commodi?</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h5>Podtytuł</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aspernatur?</p>
+            <ul>
+                <li>lorem 10</li>
+                <li>lorem 10</li>
+                <li>lorem 10</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis pariatur enim repellat?
+                Quia
+                non itaque in libero. Reprehenderit, omnis eveniet.</p>
+            <ol>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            </ol>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eveniet, laborum maxime
+                maiores vitae provident eius ab voluptatem aut voluptate.</p>
+        </div>
+        <div class="blog-post mt-5">
+            <img src="images/camera.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
+            <h4 class="blog-post-title">Przykładowy post</h4>
+            <p class="blog-post-date">10 stycznia <a href="#">Adam</a></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, commodi?</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h5>Podtytuł</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aspernatur?</p>
+            <ul>
+                <li>lorem 10</li>
+                <li>lorem 10</li>
+                <li>lorem 10</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis pariatur enim repellat?
+                Quia
+                non itaque in libero. Reprehenderit, omnis eveniet.</p>
+            <ol>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            </ol>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eveniet, laborum maxime
+                maiores vitae provident eius ab voluptatem aut voluptate.</p>
+        </div>`
+        }
+        break;
+        case 2: {
+            console.log("2");
+        }
+        break;
+        case 3: {
+            console.log("3");
+        }
+        break;
+        case 4: {
+            console.log("4");
+        }
+        break;
+        case 5: {
+            console.log("5");
+        }
+        break;
+        case 6: {
+            console.log("6");
+        }
+        break;
+        case 7: {
+            console.log("7");
+        }
+        break;
+    }
+}
 
