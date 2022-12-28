@@ -213,7 +213,9 @@ document.getElementById("searchInput").addEventListener("keyup", () => {
     addCards(filteredCards);
     let popoversNodes = document.querySelectorAll("[data-toggle='popover']");
     let popovers = [];
-    let xD = new bootstrap.Popover(el);
+    for (const el of popoversNodes) {
+        popovers.push(new bootstrap.Popover(el));
+    }
 })
 
 function changePage(pageNumber) {
