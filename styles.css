@@ -1,5 +1,6 @@
 body {
     background-color: rgb(225, 225, 225);
+    text-shadow: 0 0 0.6px #000000;
 }
 /*->->->->->->->Class<-<-<-<-<-<-<-*/
 .carousel-item {
@@ -23,7 +24,6 @@ body {
 .ad3 {
     background: url(images/panorama.jpg) no-repeat center center;
 }
-
 .cart-img-top {
     height: 200px;
     border-radius: 2px;
@@ -31,6 +31,10 @@ body {
 
 .form-box {
     width: 20rem;
+}
+.modal-content-text {
+    padding: 5px 20px;
+    font-family: 'Poppins', sans-serif;
 }
 a.disabled {
     pointer-events: none;
