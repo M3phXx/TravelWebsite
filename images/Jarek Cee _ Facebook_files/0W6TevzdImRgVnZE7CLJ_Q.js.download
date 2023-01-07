@@ -1,0 +1,5 @@
+;/*FB_PKG_DELIM*/
+
+__d("ProfilePlusCometWhatsappSMBDialogQuery$Parameters",["ProfilePlusCometWhatsappSMBDialogQuery_facebookRelayOperation"],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:b("ProfilePlusCometWhatsappSMBDialogQuery_facebookRelayOperation"),metadata:{},name:"ProfilePlusCometWhatsappSMBDialogQuery",operationKind:"query",text:null}};e.exports=a}),null);
+__d("ProfilePlusCometWhatsappSMBDialog.entrypoint",["JSResourceForInteraction","ProfilePlusCometWhatsappSMBDialogQuery$Parameters"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(a){return{queries:{queryReference:{parameters:c("ProfilePlusCometWhatsappSMBDialogQuery$Parameters"),variables:{pageID:a.pageID}}}}},root:c("JSResourceForInteraction")("ProfilePlusCometWhatsappSMBDialog.react").__setRef("ProfilePlusCometWhatsappSMBDialog.entrypoint")};g["default"]=a}),98);/*FB_PKG_DELIM*/
+__d("ProfilePlusCometWhatsappSMBDialogQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="5853724321374994"}),null);

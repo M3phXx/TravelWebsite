@@ -130,11 +130,4 @@ window.onload = () => {
             thirdContainer.innerHTML += storedInput;
         }
     }
-    /*mainContainer.innerHTML += storedID ;
-    
-    e.preventDefault();
-    var data = e.dataTransfer.getData("text");
-
-    e.currentTarget.appendChild(document.getElementById(data));
-    */
 };

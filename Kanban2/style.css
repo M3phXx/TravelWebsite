@@ -6,7 +6,6 @@ body {
     padding: 0px;
     font-family:'Times New Roman', Times, serif ;
 }
-
 .container {
     margin: 30px auto 0px auto;
     text-align: center;
@@ -16,7 +15,6 @@ body {
     flex-direction: row;
     justify-content: center;
 }
-
 .box {
     width: 28%;
     margin: 10px;
@@ -27,7 +25,6 @@ body {
 .element:hover {
     box-shadow: 2px 2px 15px 5px;
 }
-
 .element {
     width: 70%;
     margin: 10px auto;
@@ -35,48 +32,39 @@ body {
     border: 2px solid rgba(0, 0, 0, 0.8);
     border-radius: 5px;
 }
-
 .updateElement {
     background-color: rgba(255, 255, 255, 0.3);
     overflow: hidden;
 }
-
 .doc {
     display: none;
     width: 56%;
     margin: 10px 10px;
     padding: 0px 10px;
 }
-
 .doc textarea {
     width: 80%;
     margin-bottom: 20px;
 }
-
 .label {
     margin: 10px 0px;
 }
-
 textarea {
     resize: none;
 }
-
 #toDO,
 #docID {
     background-image: url(images/boxBackground.jpg);
 }
-
 #title {
     font-size: 25px;
     font-weight: bold;
     text-shadow: 0 0 2.5px #000000
 }
-
 #inProgressID {
     background-color: orange;
     opacity: 0.95;
 }
-
 #doneID {
     background-color: green;
     opacity: 0.95;
@@ -86,7 +74,6 @@ textarea {
     margin: 10px 0 5px;
     width: 80%;
 }
-
 #save,
 #exit {
     font-size: 1.2rem;

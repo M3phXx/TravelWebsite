@@ -161,7 +161,7 @@ let cards = [
         describe: "Animal friends",
         img: "images/animalForest.jpg",
         readMoretitle: "Animal Forest",
-        readMoreBody: "Wspaniałę zwierzaki, Prosimy nie dokarmiać."
+        readMoreBody: "Awesome animals. Please do not feed Them."
     },
     {
         name: "Japan",
