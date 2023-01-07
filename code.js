@@ -219,11 +219,24 @@ document.getElementById("searchInput").addEventListener("keyup", () => {
         popovers.push(new bootstrap.Popover(el));
     }
 })
-
+let saveNumber = 1;
 function changePage(pageNumber) {
     let posts = document.getElementById("postContainer");
+    let allPageItemsNumber = document.getElementsByClassName("page-item").length;
+    if(pageNumber == -2) {
+        if(saveNumber >= 2) {
+            pageNumber = saveNumber - 1;
+        }
+    }
+    if(pageNumber == -1) {
+        if(saveNumber < allPageItemsNumber - 1) {
+            console.log(allPageItemsNumber);
+            pageNumber = saveNumber + 1;
+        }
+    }
     switch (pageNumber) {
         case 1: {
+            saveNumber = 1;
             posts.innerHTML = `<div class="blog-post">
             <img src="images/Bosnia.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
             <h4 class="blog-post-title">Bosnia Road Trip</h4>
@@ -271,6 +284,7 @@ function changePage(pageNumber) {
         }
             break;
         case 2: {
+            saveNumber = 2;
             posts.innerHTML = `
             <div class="blog-post">
                         <img src="images/post1Picture.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
@@ -325,6 +339,7 @@ function changePage(pageNumber) {
         }
             break;
         case 3: {
+            saveNumber = 3;
             posts.innerHTML = `                    <div class="blog-post">
             <img src="images/amsterdam.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
             <h4 class="blog-post-title">The Ultimate Amsterdam Nightlife Guide</h4>
@@ -387,6 +402,7 @@ function changePage(pageNumber) {
         }
             break;
         case 4: {
+            saveNumber = 4;
             posts.innerHTML = `<div class="blog-post">
             <img src="images/campervan.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
             <h4 class="blog-post-title">Traveling Europe by Campervan</h4>
@@ -411,7 +427,6 @@ function changePage(pageNumber) {
     }
 }
 document.body.addEventListener('mouseover', function () {
-    console.log("xD");
     $('.popover').popover('hide');
 });
 
