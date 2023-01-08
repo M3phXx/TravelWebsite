@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="mainContainer">
+        <div class="navbar navbar-light bg-light">
+            <h4>Welcome Message</h4>
+            <button class="btn btn-primary border-dark" data-toggle="modal" data-target="#modal1">Add new</button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="col-1">No.</th>
+                    <th class="col-2">Name</th>
+                    <th class="col-5">Description</th>
+                    <th class="col-1">Serial</th>
+                    <th class="col-1">Qty</th>
+                    <th class="col-2">Action</th>
+                </tr>
+            </thead>
+            <tbody id="productContainer">
+            </tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="modal1" tabIndex="-1" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add new product</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="inputName" class="form-label">Name of the product</label>
+                    <input type="text" class="form-control mb-3" id="inputName" placeholder="Name">
+                    <label for="inputDescription" class="form-label">Description of the product</label>
+                    <input type="text" class="form-control mb-3" placeholder="Description" id="inputDescription">
+                    <label for="inputSerial" class="form-label">Serial number</label>
+                    <input type="text" class="form-control mb-3" placeholder="Serial number" id="inputSerial">
+                    <label for="inputQuantity" class="form-label">Quantity</label>
+                    <input type="text" class="form-control mb-3" placeholder="Quantity" id="inputQuantity">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary m-auto" type="button" id="submit" data-dismiss="modal" onclick="addProduct()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

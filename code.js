@@ -183,7 +183,7 @@ let cards = [
         img: "images/seaBeach.jpg",
         readMoretitle: "Sea Beach",
         readMoreBody: "Storm, many adventures, puzzles. We have prepared many surprises!"
-    },
+    }
 ]
 
 function addCards(newCards) {

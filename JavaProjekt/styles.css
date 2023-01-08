@@ -1,0 +1,21 @@
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#reduceButton {
+    text-align: center;
+}
+#newProductContainer>* {
+    background-color: red;
+}
+#mainContainer {
+    border: 1px solid black;
+}
+#dropButton {
+    transform: scale(0.7);
+}
+.displayBlock {
+    display: block;
+}
