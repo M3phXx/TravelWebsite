@@ -32,6 +32,15 @@ window.onload = () => {
         },
         {
             id: "3",
+            name: "Japonki31",
+            type: "flips",
+            describe: "Around the World",
+            img: "./images/shoppingCard-Images/flops1.jpg",
+            price: "50$",
+            amount: "0"
+        },
+        {
+            id: "3",
             name: "Japonki3",
             type: "flips",
             describe: "Around the World",
@@ -88,21 +97,36 @@ function setTheme(theme) {
         themeButton.innerHTML = "Dark";
     }
 }
+function clearCart() {
+    document.getElementById("cartCards").innerHTML = "";
+}
 function listProducts(cardType) {
-    let filteredCards = [];
+    clearCart();
     let localCards = JSON.parse(localStorage.getItem("cards"));
-    filteredCards = localCards.filter(function (e) {
+    let filteredCards = localCards.filter(function (e) {
         if (e.type.toLowerCase().includes(cardType)) {
             return e.type;
         }
     });
-    addCards(filteredCards);
+    let src = document.getElementById("cards");
+    addCards(filteredCards, src);
+    document.getElementById("cards")
 }
+function backetAddCarts() {
 
-function addCards(newCards) {
-    document.getElementById("cards").innerText = "";
+    let localCards = JSON.parse(localStorage.getItem("cards"));
+    let filteredCards = localCards.filter((e)=>{
+        if(e.amount > 0){
+            return e;
+        }
+    });
+    let src = document.getElementById("cartCards");
+    addCards(filteredCards, src);
+}
+function addCards(newCards, source) {
+    source.innerHTML = "";
     let discount = ``;
-    for (var i = 0; i < newCards.length; i++) {
+    for (var i = 0; i < newCards.length; i++) { /*Dodaje discount do kart*/
         if(newCards[i].discount) {
             discount = newCards[i].discount;
         }
@@ -110,8 +134,8 @@ function addCards(newCards) {
         {
             discount = ``;
         }
-        document.getElementById("cards").innerHTML += `
-        <div class="col-12 col-md-6 col-lg-4">
+        source.innerHTML += `
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <div class="card mt-3">
             <img src="${newCards[i].img}" alt="" class="w-100" height="200px">
             <h4 class="card-header">${newCards[i].name}</h4>
@@ -142,12 +166,17 @@ function changeAmount(sign , cardId) {
     /*Zmienia wartosc amount w card i localCards*/
     switch(sign) {
         case "+":
+            if(parseInt(cardAmount.innerHTML) < 9){
             cardAmount.innerHTML = `${parseInt(cardAmount.innerHTML) + 1}`;
             specificCard[0].amount = parseInt(specificCard[0].amount) + 1;
+            console.log(cardAmount.innerHTML);
+            }
         break;
         case "-":
-            cardAmount.innerHTML = `${parseInt(cardAmount.innerHTML) - 1}`;
-            specificCard[0].amount = parseInt(specificCard[0].amount) - 1;
+            if(parseInt(cardAmount.innerHTML) > 0){
+                cardAmount.innerHTML = `${parseInt(cardAmount.innerHTML) - 1}`;
+                specificCard[0].amount = parseInt(specificCard[0].amount) - 1;
+            }
         break;
     }
     let newCards = localCards.filter((e)=>{

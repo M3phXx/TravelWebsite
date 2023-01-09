@@ -176,6 +176,10 @@ footer a {
     padding-left: 30%;
     justify-content: space-between;
 }
+.cartButtonContainer {
+    text-align: center;
+    margin-bottom: 15px;
+}
 .navbarBox {
     top: -15px;
     position: absolute;
@@ -226,4 +230,8 @@ footer a {
     padding-top: 3px;
     transform: scale(1.1);
     cursor: pointer;
+}
+.modal-dialog {
+    min-width: 50%;
+    max-width: 1000px;
 }

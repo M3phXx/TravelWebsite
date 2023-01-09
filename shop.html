@@ -32,42 +32,6 @@
                 </ul>
             </div>
         </div>
-        <!-------Navbar Modal------->
-        <div class="modal fade" id="modal2" tabIndex="-1" data-backdrop="static">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div id="relativeImage">
-                        <div id="absoluteTransparent">
-                            <img src="images/bubble.png" alt="" width="70px">
-                        </div>
-                    </div>
-                    <div class="modal-header">
-                        <h5 class="modal-title">Logowanie</h5>
-                        <button class="close" data-dismiss="modal">
-                            <span>&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="text" name="email" class="form-control mb-3" id="inputEmail"
-                            placeholder="Wpisz adres Email">
-                        <label for="inputPassword" class="form-label">Haslo</label>
-                        <input type="password" class="form-control mb-3" placeholder="Wpisz Haslo" id="inputPassword">
-                        <input type="checkbox" class="form-check-input ml-2" onchange="localEmail()" id="inputCheckbox">
-                        <label for="inputCheckbox" class="form-check-label ml-2">
-                            Zapamiętaj mnie
-                        </label>
-                        <span class="float-right mr-5"><a href="#" type="button" data-dismiss="modal"
-                                data-target="#modal1">Rejestracja</a></span>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" type="button" onclick="checkInputs()"
-                            id="login">Zaloguj</button>
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Zamknij</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </nav>
     <!-------cart------->
     <div class="navbar navbar-expand-md  navbar-dark mt-5 mb-5">
@@ -117,15 +81,44 @@
                 </div>
             </ul>
             <div class="cart">
-                <i class="bi bi-basket"></i>
+                <i class="bi bi-basket" data-toggle="modal" data-target="#modal1" onclick="backetAddCarts()"></i>
                 <div class="cartAmount text-white" id="cartAmount">0</div>
             </div>
         </div>
     </div>
+    <!--ShoppingCart-->
+    <div class="modal fade" id="modal1" tabIndex="-1" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div id="relativeImage">
+                    <div id="absoluteTransparent">
+                        <img src="images/bubble.png" alt="" width="70px">
+                    </div>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title">Shopping Cart</h5>
+                    <button class="close" data-dismiss="modal" onclick="clearCart()">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--ShoppingCartCards-->
+                    <div class="row cartCards" id="cartCards"></div>
+
+                </div>
+                <div class="cartButtonContainer">
+                    <button class="btn btn-warning" type="button">Order</button>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal" onclick="clearCart()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!--cartBody-->
-    <div class="container">
+    <div class="cardBody">
         <div class="row">
-            <div class="filterMenu col-3">
+            <!--cartAside-->
+            <div class="filterMenu col-4 col-sm-3 col-md-2">
                 <div class="filters">
                     <h4>Filters</h4>
                     <div>
@@ -136,7 +129,8 @@
                     </div>
                 </div>
             </div>
-            <div class="cards col-9 row cardContainer" id="cards"></div>
+            <!--cartCards-->
+            <div class="cards col-8 col-sm-9 col-md-10 row cardContainer" id="cards"></div>
         </div>
     </div>
     <!--footer-->
