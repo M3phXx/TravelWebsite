@@ -1,9 +1,23 @@
 window.onload = () => {
+    //Dodaje karty
     addCards(cards);
     if (localStorage.getItem("login")) {
         document.getElementById("inputEmail").value = localStorage.getItem("login");
         document.getElementById("inputCheckbox").checked = true;
     }
+    //Ustawia Theme
+    if(JSON.parse(localStorage.getItem("theme"))) {
+        let theme = JSON.parse(localStorage.getItem("theme"));
+        setTheme(theme);
+    }
+    else {
+        let theme = [];
+        theme[0] = "black";
+        theme[1] = "225";
+        theme[2] = "0.125"
+        localStorage.setItem("theme", JSON.stringify(theme));
+    }
+    //..
     let formElements = document.querySelectorAll(".needs-validation");
     Array.prototype.slice.call(formElements).forEach(function (form) {
         form.addEventListener('submit', (event) => {
@@ -29,27 +43,42 @@ window.onload = () => {
         popovers.push(new bootstrap.Popover(el));
     }
 }
-function darkTheme(e) {
-    document.body.style.backgroundColor = 'rgb(' + 30 + ',' + 30 + ',' + 30 + ')';
-    let pCon = document.getElementById("postContainer").style.color = "white";
-    let bCards = document.getElementById("bottomCards").style.color = "white";
-    let asideBar = document.getElementById("asideBar").style.color = "white";
-    let cards = document.getElementsByClassName("card");
-    for (var i = 0; i < cards.length; i++) {
-        cards[i].style.border = "1px solid rgba(0,0,0,.875)";
+//----------------- Theme ---------------- //
+function changeTheme() {
+    let theme = JSON.parse(localStorage.getItem("theme") || "[]");
+    if (theme[1] == "30") {
+        theme[0] = "black";
+        theme[1] = "225";
+        theme[2] = "0.125"
     }
-    e.preventDefault();
+    else {
+        theme[0] = "white";
+        theme[1] = "30";
+        theme[2] = "0.875"
+    }
+    localStorage.setItem("theme", JSON.stringify(theme));
+    setTheme(theme);
 }
-function lightTheme(e) {
-    document.body.style.backgroundColor = 'rgb(' + 225 + ',' + 225 + ',' + 225 + ')';
-    let pCon = document.getElementById("postContainer").style.color = "black";
-    let bCards = document.getElementById("bottomCards").style.color = "black";
-    let asideBar = document.getElementById("asideBar").style.color = "black";
+function setTheme(theme) {
+    document.body.style.backgroundColor = 'rgb(' + theme[1] + ',' + theme[1] + ',' + theme[1] + ')';
+    let themeButton = document.getElementById("themeButton");
+    document.getElementById("postContainer").style.color = theme[0];
+    document.getElementById("bottomCards").style.color = theme[0];
+    document.getElementById("asideBar").style.color = theme[0];
     let cards = document.getElementsByClassName("card");
     for (var i = 0; i < cards.length; i++) {
-        cards[i].style.border = "1px solid rgba(0,0,0,.125)";
+        cards[i].style.border = `1px solid rgba(0,0,0,${theme[2]})`;
+        console.log(theme[2]);
     }
-    e.preventDefault();
+    if (theme[1] == "30") {
+        themeButton.classList = "rounded border-light";
+        themeButton.innerHTML = "Light";
+    }
+    else {
+
+        themeButton.classList = "rounded bg-dark text-light border-light";
+        themeButton.innerHTML = "Dark";
+    }
 }
 function localEmail() {
     let email = document.getElementById("inputEmail");
@@ -223,13 +252,13 @@ let saveNumber = 1;
 function changePage(pageNumber) {
     let posts = document.getElementById("postContainer");
     let allPageItemsNumber = document.getElementsByClassName("page-item").length;
-    if(pageNumber == -2) {
-        if(saveNumber >= 2) {
+    if (pageNumber == -2) {
+        if (saveNumber >= 2) {
             pageNumber = saveNumber - 1;
         }
     }
-    if(pageNumber == -1) {
-        if(saveNumber < allPageItemsNumber - 1) {
+    if (pageNumber == -1) {
+        if (saveNumber < allPageItemsNumber - 1) {
             console.log(allPageItemsNumber);
             pageNumber = saveNumber + 1;
         }

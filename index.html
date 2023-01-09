@@ -19,8 +19,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="mr-auto mb-2 mb-md-0">
-
+                <ul class="mr-auto mb-2 mb-md-0 navbar-links-container">
+                    <a href="" class="navbar-link mr-3">Sklep</a>
+                    <a href="" class="navbar-link mr-3">Hotele</a>
+                    <a href="" class="navbar-link mr-0">Kontakt</a>
                 </ul>
                 <form action="" class="d-flex mt-3 mt-md-0">
                     <div class="input-group">
@@ -28,16 +30,16 @@
                             aria-describedby="search-addon" id="searchInput" />
                         <button type="button" class="btn btn-outline-success" id="searchButton">Search</button>
                     </div>
-                    <button data-toggle="modal" class="btn btn-primary ml-3" data-target="#modal2" type="button">
+                    <button data-toggle="modal" class="btn btn-primary ml-2" data-target="#modal2" type="button">
                         Login
                     </button>
                 </form>
                 <ul class="mb-2 mb-md-0 mt-3 mt-md-0">
-                    <button onclick="darkTheme(event)" class="rounded bg-dark text-light border-light">Dark</button>
-                    <button onclick="lightTheme(event)" class="rounded border-light">Light</button>
+                    <button onclick="changeTheme()" class="rounded bg-dark text-light border-light" id="themeButton">Dark</button>
                 </ul>
             </div>
         </div>
+            <!--Navbar Modal-->
         <div class="modal fade" id="modal2" tabIndex="-1" data-backdrop="static">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -73,7 +75,6 @@
                 </div>
             </div>
         </div>
-
     </nav>
     <!--Carousel-->
     <header class="container headerContainer">

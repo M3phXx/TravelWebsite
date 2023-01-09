@@ -83,7 +83,6 @@ function changeAmount(number, productID) {
                     if (e.id.includes(productID)) {
                         if(e.quantity >= 1) {
                             e.quantity -= 1; 
-                            console.log(e.quantity);
                         }
                     }
                 }
@@ -96,7 +95,6 @@ function changeAmount(number, productID) {
                         if (e.id.includes(productID)) {
                             if(e.quantity >= 1) {
                                 e.quantity = parseInt(e.quantity) + 1; 
-                                console.log(typeof e.quantity);
                             }
                         }
                     } 

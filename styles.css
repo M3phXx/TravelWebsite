@@ -12,7 +12,16 @@ body {
 .navbar, #footer {
     background-color: rgb(44, 44, 44);
 }
+.navbar-links-container {
 
+}
+.navbar-link {
+    text-decoration: none;
+    color: white;
+}
+.sl {
+    transform: scale(0.8);
+}
 .ad1 {
     background: url(images/vacation.png) no-repeat center center;
 }
