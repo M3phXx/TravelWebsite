@@ -1,206 +1,310 @@
-function changePost(pageNumber) {
-    let posts = document.getElementById("postContainer");
-    let allPageItemsNumber = document.getElementsByClassName("page-item").length;
-    if (pageNumber == -2) {
-        if (saveNumber >= 2) {
-            pageNumber = saveNumber - 1;
-        }
-    }
-    if (pageNumber == -1) {
-        if (saveNumber < allPageItemsNumber - 1) {
-            console.log(allPageItemsNumber);
-            pageNumber = saveNumber + 1;
-        }
-    }
-    switch (pageNumber) {
-        case 1: {
-            saveNumber = 1;
-            posts.innerHTML = `<div class="blog-post pl-1">
-            <img src="images/Bosnia.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
-            <h4 class="blog-post-title">Bosnia Road Trip</h4>
-            <p class="blog-post-date">Feb 9, 2020 <a href="#">Harry Callum</a></p>
-            <p>Itinerary for Bosnia-Herzegovina [10 Days] in the Balkans</p>
-            <hr>
-            <h5>How awesome is Bosnia-Herzegovina</h5>
-            <p>How awesome is Bosnia-Herzegovina – there are epic waterfalls, stunning clear rivers and
-                charming little towns.
-                When considering a country in eastern Europe for a road trip, Bosnia & Herzegovina should be
-                one of the first countries on your mind. This idyllic country often gets overshadowed by its
-                neighbour, Croatia. Don’t get me wrong, Croatia is a magnificent country in itself but
-                Bosnia & Herzegovina is just something else. <br>Nature-lovers will be astounded by the
-                abundance of natural marvels that are hidden within Bosnia & Herzegovina. It is a surprise
-                that it is often less travelled than its neighbours, but that also means that it is
-                typically less crowded. This also means that you will be able to travel around without
-                seeing the full effects that tourism has on the society. You can expect genuine,
-                unforgettable experiences.
-
-                Even though this post has a recommended itinerary for a road trip in Bosnia-Herzegovina, we
-                recommend not making concrete plans but having a rough idea where you want to start and end.
-                Enter Bosnia, go find a river and drive along it.</p>
-        </div>
-        <div class="blog-post mt-5 pl-1">
-            <img src="images/pulaCroatia.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
-            <h4 class="blog-post-title">Things to do in Pula, Croatia</h4>
-            <p class="blog-post-date">Nov 14, 2019 <a href="#">Anna Bernard</a></p>
-            <p>Things to do in Pula, Croatia: Travel Guide for the Gem of Istria</p>
-            <hr>
-            <h5>Where is Pula</h5>
-            <img src="images/pula.PNG" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
-            <p>Best places in Pula, Croatia:</p>
-            <ul>
-                <li>Pula Beaches</li>
-                <li>Ambrela Beach</li>
-                <li>Stoja Beach</li>
-            </ul>
-            <p>If you are planning to visit multiple places in the country, then Pula is the best place to
-                start your Croatia itinerary. Istria is the westernmost county in Croatia which makes it an
-                ideal place to begin your escapades around this mesmerizing country.</p>
-            <h5>How to Reach Pula?</h5>
-            <p>It is simple to reach Pula by many different ways. We arrived here on bus from Slunj town
-                but below are all the other ways to enter Pula:</p>
-        </div>`
-        }
-            break;
-        case 2: {
-            saveNumber = 2;
-            posts.innerHTML = `
-            <div class="blog-post pl-1">
-                        <img src="images/post1Picture.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
-                        <h4 class="blog-post-title">Mokra Gora</h4>
-                        <p class="blog-post-date">Jan 2, 2019 <a href="#">Paula Middleton</a></p>
-                        <p>Small mountains, old school train journey and a wooden village – this is Mokra Gora in
-                            Western Serbia.</p>
-                        <hr>
-                        <p>In a mood for a digital detox, we searched for a scenic destination in the middle of nowhere
-                            when we found Mokra Gora. We knew we had found a special place when Google maps completely
-                            threw us off. Oh and we had to use the Translate app to communicate with the locals. It was
-                            exactly the kind of escape we wanted after Belgrade’s busy vibe.</p>
-                        <h5>Mokra Gora Travel Guide</h5>
-                        <p>Mokra Gora’s Narnia like landscape totally won our hearts.
-
-                            There were little green hills, fairy tale-ish wooden cottages, simple village life and a
-                            vibe that was still unaffected by tourism. Using simple hand gestures to communicate with
-                            the locals somehow made our experience even more special.</p>
-                        <h6>How to Reach Mokra Gora from Belgrade</h6>
-                        <p>The nearest big towns near Mokra Gora are Zlatibor and Užice. We arrived here on a rented
-                            card from Belgrade. The journey on the road takes around 3 – 4 hours but we spent 9 hours to
-                            reach. It was because of a traffic jam that was caused due to the road repair work.</p>
-                            <h6>Things to do in Mokra Gora, Serbia</h6>
-                            <ul>
-                                <li>Mokra Gora Train – Šargan Eight steam train</li>
-                                <li>Drvengrad Bamboo Village [Küstendorf]</li>
-                                <li>Tara National Park</li>
-                            </ul>
+function changePage(page) {
+    let pageContainer = document.getElementsByClassName("pageContainer")[0];
+    let pageContainer2 = document.getElementById("xDxD");
+    switch(page) {
+        case "main": {
+            pageContainer2.innerHTML = `<header class="container headerContainer">
+            <div class="mt-3 carousel slide" data-ride="carousel" id="topCarousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#topCarousel" data-slide-to="0"></li>
+                    <li data-target="#topCarousel" data-slide-to="1"></li>
+                    <li data-target="#topCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item rounded ad1 active ">
+                        <div class="carousel-caption text-light">
+                            <h3>Where to go on vacation?</h3>
+                        </div>
                     </div>
-                    <div class="blog-post mt-5 pl-1">
-                        <img src="images/camera.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
-                        <h4 class="blog-post-title">The Ultimate Turkey Itinerary 10 Days</h4>
-                        <p class="blog-post-date">Aug 14, 2019 <a href="#">Clare Stokes</a></p>
-                        <p>Is it Asia or Europe? Turkey is both – the best of two continents in just one country.
+                    <div class="carousel-item rounded ad2">
+                        <div class="carousel-caption text-light">
+                            <h4>How to plan a trip?</h4>
+                            <p>Venue, tickets, expenses.</p>
+                            <div class="data-caption">February 19</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item rounded ad3">
+                        <div class="carousel-caption text-light">
+                            <h4>Life in the city</h4>
+                            <p>Pluses and minuses</p>
+                            <div class="data-caption">April 15</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#topCarousel" type="button" data-slide="prev" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span></a>
+                <a href="#topCarousel" type="button" data-slide="next" class="carousel-control-next"><span
+                        class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Następny</span></a>
+            </div>
+        </header>
+        <main class="container cardsContainer mt-5">
+            <!--Cards-->
+            <div class="row cardContainer" id="cards" fetchpriority="highest"></div>
+            <!--Posts-->
+            <div class="row">
+                <div class="col-md-8 mt-5 mb-5">
+                    <div id="postContainer">
+                        <div class="blog-post pl-1">
+                            <img src="images/Bosnia.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
+                            <h4 class="blog-post-title">Bosnia Road Trip</h4>
+                            <p class="blog-post-date">Feb 9, 2020 <a href="#">Harry Callum</a></p>
+                            <p>Itinerary for Bosnia-Herzegovina [10 Days] in the Balkans</p>
+                            <hr>
+                            <h5>How awesome is Bosnia-Herzegovina</h5>
+                            <p>How awesome is Bosnia-Herzegovina – there are epic waterfalls, stunning clear rivers and
+                                charming little towns.
+                                When considering a country in eastern Europe for a road trip, Bosnia & Herzegovina
+                                should be
+                                one of the first countries on your mind. This idyllic country often gets overshadowed by
+                                its
+                                neighbour, Croatia. Don’t get me wrong, Croatia is a magnificent country in itself but
+                                Bosnia & Herzegovina is just something else. <br>Nature-lovers will be astounded by the
+                                abundance of natural marvels that are hidden within Bosnia & Herzegovina. It is a
+                                surprise
+                                that it is often less travelled than its neighbours, but that also means that it is
+                                typically less crowded. This also means that you will be able to travel around without
+                                seeing the full effects that tourism has on the society. You can expect genuine,
+                                unforgettable experiences.
 
-                            At first it may appear that Turkey mostly suits cultural travelers. After all, it sits on
-                            the cusp of both Europe and Asia, it’s no wonder that the Turkish heritage is a fascinating
-                            fusion of various cultures. By finely balancing age-old traditions with modern influences,
-                            Turkey promises travelers an unforgettable experience.</p>
-                        <hr>
-                        <h6>The ultimate 10 day Turkey itinerary for first timers</h6>
-                        <p>Here’s the thing – Turkey is an amazing destination for literally every kind of traveler.
-                            Adventure seekers, backpackers, families, fantasy landscape chasers, pilgrims and party
-                            travelers – they all will love Turkey for same as well as different reasons.</p>
-                        <p>I’m not much of a cultural traveler but I’m always in search of fantastic landscapes. I
-                            traveled to Turkey mainly because I had seen photos of Cappadocia‘s surreal structures that
-                            looked something like a fantasy movie. Moreover, I really wanted to sit in Pamukkale‘s blue
-                            and white natural pools.</p>
-                        <p>Yes, I did everything that I wanted to do, and even more. Believe it or not, I fell in love
-                            with the culture in Turkey despite claiming not to be a cultural traveler. </p>
-                    </div>`;
-        }
-            break;
-        case 3: {
-            saveNumber = 3;
-            posts.innerHTML = `                    <div class="blog-post pl-1">
-            <img src="images/amsterdam.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
-            <h4 class="blog-post-title">The Ultimate Amsterdam Nightlife Guide</h4>
-            <p class="blog-post-date">Nov 19, 2019 <a href="#">Brian Hunter</a></p>
-            <p>Best Nightclubs + Tips</p>
-            <hr>
-            <h5>Best Amsterdam Nightclubs </h5>
-            <h6>Bars in Amsterdam Central (including Leidseplein)</h6>
-            <p>And it is time for the legendary Amsterdam Center! Everyone knows that this famous city
-                center offers a one of a kind night out. Europe’s nightlife capital has a lot of options
-                when it comes to nightclubs, venues, and bars. </p>
-            <h6>Cafe de Dokter</h6>
-            <p>Want to time travel and enter history? Visit Cafe de Dokter. This isn’t a dance club but a
-                vintage bar that has been in business since 1798. It is in Amsterdam Centraal near Rokin
-                station. It is a gem in Amsterdam’s busy area which many say is the best bar in the world.
-            </p>
-            <h6>Club Hartje (Bar ‘t Hartje)</h6>
-            <p>
-                Club Hartje is a popular party spot in Leidseplein. The drinks are cheap, the atmosphere is
-                insane and you will not just find tourists but also plenty of locals.
+                                Even though this post has a recommended itinerary for a road trip in Bosnia-Herzegovina,
+                                we
+                                recommend not making concrete plans but having a rough idea where you want to start and
+                                end.
+                                Enter Bosnia, go find a river and drive along it.</p>
+                        </div>
+                        <div class="blog-post mt-5 pl-1">
+                            <img src="images/pulaCroatia.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4"
+                                id="img">
+                            <h4 class="blog-post-title">Things to do in Pula, Croatia</h4>
+                            <p class="blog-post-date">Nov 14, 2019 <a href="#">Anna Bernard</a></p>
+                            <p>Things to do in Pula, Croatia: Travel Guide for the Gem of Istria</p>
+                            <hr>
+                            <h5>Where is Pula</h5>
+                            <img src="images/pula.PNG" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
+                            <p>Best places in Pula, Croatia:</p>
+                            <ul>
+                                <li>Pula Beaches</li>
+                                <li>Ambrela Beach</li>
+                                <li>Stoja Beach</li>
+                            </ul>
+                            <p>If you are planning to visit multiple places in the country, then Pula is the best place
+                                to
+                                start your Croatia itinerary. Istria is the westernmost county in Croatia which makes it
+                                an
+                                ideal place to begin your escapades around this mesmerizing country.</p>
+                            <h5>How to Reach Pula?</h5>
+                            <p>It is simple to reach Pula by many different ways. We arrived here on bus from Slunj town
+                                but below are all the other ways to enter Pula:</p>
+                        </div>
+                    </div>
+                    <!--paginacja-->
+                    <div>
+                        <nav class="mt-5" aria-label="Paginacja strony">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a onclick="changePage(-2)" tabindex="-1" aria-disabled="true"
+                                        class="page-link">-</a>
+                                </li>
+                                <li class="page-item"><a onclick="changePost(1)" class="page-link active">1</a></li>
+                                <li class="page-item"><a onclick="changePost(2)" class="page-link">2</a></li>
+                                <li class="page-item"><a onclick="changePost(3)" class="page-link">3</a></li>
+                                <li class="page-item"><a onclick="changePost(4)" class="page-link">4</a></li>
+                                <li class="page-item"><a onclick="changePost(-1)" class="page-link">+</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- sidebar -->
+                <aside class="col-md-4 mt-5" id="asideBar">
+                    <div class="bg-light-p-4 mb-3 rounded">
+                        <h4 class="font-italic">About site</h4>
+                        <p>The website is the first project created by <i>Jaroslaw Chelminski</i></p>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-italic">Archives</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#" class="disabled">January</a></li>
+                            <li><a href="#" class="disabled">February</a></li>
+                            <li><a href="#" class="disabled">March</a></li>
+                            <li><a href="#" class="disabled">April</a></li>
+                            <li><a href="#" class="disabled">May</a></li>
+                            <li><a href="#" class="disabled">June</a></li>
+                            <li><a href="#" class="disabled">July</a></li>
+                            <li><a href="#" class="disabled">August</a></li>
+                            <li><a href="#" class="disabled">September</a></li>
+                            <li><a href="#" class="disabled">October</a></li>
+                            <li><a href="#" class="disabled">December</a></li>
+                        </ol>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-italic">Info</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#" data-toggle="modal" type="button" data-target="#modalAsideOfficeBuilding"
+                                    id="info">Our Office</a></li>
+                            <li><a href="#" data-toggle="modal" type="button" data-target="#modalAsideCulinary"
+                                    id="info">Kitchen</a></li>
+                            <li><a href="#" data-toggle="modal" type="button" data-target="#modalAsideourGroup"
+                                    id="info">Our Team</a></li>
+                        </ol>
+                    </div>
+                    <div class="modal fade" id="modalAsideCulinary" tabIndex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <img src="images/culinary.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modalAsideOfficeBuilding" tabIndex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <img src="images/officeBuilding.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modalAsideourGroup" tabIndex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <img src="images/ourGroup.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <!--NewsLetter-->
+            <div id="newsletter-box" class="rounded p-4 mb-3 bg-light">
+                <div class="d-flex justify-content-center align-content-center">
+                    <div class="form-box">
+                        <form action="" novalidate class="row g-3 needs-validation">
+                            <div class="col-12">
+                                <input type="text" placeholder="Wpisz email" class="form-control" id="emailInput"
+                                    required>
+                                <div class="valid-feedback">Email prawidłowy!</div>
+                                <div class="invalid-feedback">Wymagane wpisanie maila!</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="agreement" required>
+                                    <label for="agreement" class="form-check-label text-light">Zgadzam się z
+                                        regulaminem</label>
+                                    <div class="invalid-feedback">Wymagane zaznaczenie</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary btn-block" type="submit">
+                                    Zapisz mnie na newsletter
+                                </button>
+                            </div>
+                        </form> <!--novalidate-html nie obsluzy nam tego-->
+                    </div>
+                </div>
+            </div>
+            <!--bottomCards-->
+            <div class="row mt-3" id="bottomCards">
+                <div class="col-sm-6">
+                    <div class="border rounded row g-0 overflow-hidden shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column">
+                            <strong class="mb-2 text-primary">Trip</strong>
+                            <h3>Trip</h3>
+                            <div class="mb-1 text-muted">Dec 7</div>
+                            <p class="card-text mb-auto">
+                                don't forget to take camera!
+                            </p>
+                            <a href="#" data-toggle="modal" type="button" data-target="#bottomCards1">Read more</a>
+                        </div>
+                        <div class="col-auto d-none d-md-block">
+                            <img src="images/summer.jpg" alt="" class="img-fluid" width="200px" height="250px">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="border rounded row g-0 overflow-hidden shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column">
+                            <strong class="mb-2 text-primary">Island</strong>
+                            <h3>Island</h3>
+                            <div class="mb-1 text-muted">Dec 1</div>
+                            <p class="card-text mb-auto">
+                                Be aware of bears and wolfs!
+                            </p>
+                            <a href="#" data-toggle="modal" type="button" data-target="#bottomCards2">Read more</a>
+                        </div>
+                        <div class="col-auto d-none d-md-block">
+                            <img src="images/woman.jpg" alt="" class="img-fluid" width="200px" height="250px">
+                        </div>
+                    </div>
+                </div>
+                <!--bottomCardsModal-->
+            </div>
+            <div class="modal fade" id="bottomCards1" tabIndex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="images/summer.jpg" alt="">
+                        <div class="modal-content-text">
+                            <p>Since the views along the road are so beautiful you won't believe your eyes at times, we
+                                know
+                                a camera definitely comes in handy, so there are a few things to keep in mind. It
+                                happens to
+                                be damp and things tend to get wet. Bring plastic bags to keep your camera (as well as
+                                your
+                                phone and wallet) nice and dry.
+                            </p>
+                            <p>After all, you want to keep the great photos you take. Also,
+                                when you leave your car parked on a major highway to check something out, you'll
+                                probably
+                                take your camera, but if for some reason you don't, be sure to lock it securely in the
+                                trunk. Be aware that valuables are not safe in plain sight along the highway. Plus,
+                                there's
+                                no reason to leave your camera in your car - there's a good chance you'll miss a great
+                                shot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="bottomCards2" tabIndex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="images/woman.jpg" alt="">
+                        <div class="modal-content-text">
+                            <p>There have been numerous sightings of bears and wolves in recent weeks. The best way to
+                                stay safe and prevent property damage and avoid conflicts with bears is to not attract
+                                them in the first place. You can safely manage attractants and reduce the likelihood of
+                                attracting bears to your property by:
 
-                Ever tried a body shot? Try one here because Club Hartje is famous for its body shots. There
-                is also a VIP area. The entry is free everyday, even on Fridays and Saturdays.
-            </p>
-            <h6>Amsterdam West (Oud-West)</h6>
-            <p>
-                Being known as the most diverse part of the city, the West offers a nice time for every
-                taste. With its busy shops, fine dining, cool pubs, and cozy cafes, this district is always
-                fun, whether it is day or night.
-
-                If you are looking for an epic night out, Oud-West is a great spot to start the party. When
-                the night hits, there’s nothing more exciting than wandering around the streets of Amsterdam
-                West and finding the best nightclub! Here are some of the best nightclubs of the West
-                district!
-            </p>
-        </div>
-        <div class="blog-post mt-5 pl-1">
-            <img src="images/netherlands.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
-            <h4 class="blog-post-title">Netherlands</h4>
-            <p class="blog-post-date">Nov 14, 2019 <a href="#">Peter Lawton</a></p>
-            <p>Top Places to visit</p>
-            <hr>
-            <h5>Itinerary + Travel Guide</h5>
-            <p>What’s the first image that comes to your mind when someone mentions the Netherlands? I bet
-                it’s the colorful tulips, spectacular windmills, delicious waffles, loads of bicycles, gouda
-                cheese, or the narrow canals. Yes, the Netherlands has all of that but also a lot more.</p>
-            <ul>
-                <li>If you’re visiting this amazing country, then don’t just spend all of your time in
-                    Amsterdam. Here are the top places to visit in the Netherlands, check them out. </li>
-                <li>The most famous destination in the Netherlands is Amsterdam – but you know that already.
-                    It is a part of every single itinerary for the Netherlands. But hey, don’t miss out on
-                    all the other amazing things to do in the Netherlands just because of Amsterdam.</li>
-                <li>Geographically flat, the Netherlands is the perfect place to bicycle. This amazing
-                    country has some of the most bicycle friendly places in the world. Maybe because of
-                    this, the Dutch are extremely fit and sporty. In a way, the Dutch are like the
-                    Australians of Europe. They’re awesome! Make sure you talk to a few locals and get to
-                    know them when you visit the Netherlands.</li>
-            </ul>
-            </div>`
+                                Securing and storing garbage, pet food and compost in bear and odor proof bins or
+                                buildings.
+                                Bird seed removal. Most birds do not need seeds during the summer months.
+                                Cleaning the grill after each use.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+        </main>
+        <footer id="footer" class="text-light mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        Made by M3phX
+                    </div>
+                    <div class="col-12 text-center">
+                        Copyright by Blog. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>`;
         }
-            break;
-        case 4: {
-            saveNumber = 4;
-            posts.innerHTML = `<div class="blog-post pl-1">
-            <img src="images/campervan.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
-            <h4 class="blog-post-title">Traveling Europe by Campervan</h4>
-            <p class="blog-post-date">Dec 6, 2019 <a href="#">Jennifer Fisher</a></p>
-            <p>Our Tips for “Van Life Europe”.</p>
-            <hr>
-            <p>It has almost been a year that San and I bought a campervan. In this time, we have driven
-                around Europe in our van from east to west and covered many countries. We have driven in 11
-                different countries on our campervan, that includes three national parks, mountains, beaches
-                as well as two music festivals. </p>
-            <p>With very little knowledge at the start of our first trip, we made a few rookie mistakes.
-                Nothing serious but we laughed a lot at our stupidity and eventually learned how to explore
-                Europe in our campervan like pros. A lot of information that we needed about traveling
-                Europe in a campervan wasn’t really available online because most of the website focused on
-                living in a van, versus traveling in one. </p>
-            <p>Anyway, before we share our essential tips for exploring Europe by camper van, we’d like to
-                discuss a few things to help you decide if van-life is really for you, and if it is – then
-                what kind of van you really need.</p>
-        </div>`;
+        break;
+        case "shop": {
+            pageContainer2.innerHTML = ``;
         }
-            break;
+        break;
+        case "hotels": {
+            pageContainer2.innerHTML = `xD`;
+        }
+        break;
+        case "contact": {
+            pageContainer2.innerHTML = ``;
+        }
+        break;
     }
 }

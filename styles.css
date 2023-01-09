@@ -55,6 +55,11 @@ footer a {
     color: #aaaaab;
 }
 /*->->->->->->->ID<-<-<-<-<-<-<-*/
+#footer {
+    position: fixed;
+    width: 100%;
+    bottom:0;
+}
 #newsletter-box {
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -164,4 +169,40 @@ footer a {
     /*  */
     background-color: #3f3f3f;
     border-radius: 20px;
+}
+/*------------------------------------------Shopping Cart--------------------------------------*/
+.navbarMenu {
+    position: relative;
+    margin-top: 50px;
+}
+.navbarBox {
+    top: -25px;
+    position: absolute;
+    width: 25%;
+    border-bottom-right-radius: 150px;
+    height: 70px;
+    background-color: rgb(155, 44, 44);
+}
+.menuItems {
+    margin-left: 270px;
+}
+.menuItems>a {
+    text-decoration: none;
+}
+.bi-basket {
+    position: relative;
+    margin-right: 30px;
+    background-color: rgb(225, 225, 225);
+    color:#212529;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.cartAmount {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background-color: red;
+    width: 20px;
+    text-align: center;
 }
