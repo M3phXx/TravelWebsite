@@ -54,12 +54,12 @@ let cards = [
         amount: "0"
     },
     {
-        name: "Japonki2",
+        name: "Japonki22",
         type: "flips",
         describe: "Around the World",
         img: "./images/shoppingCard-Images/flops1.jpg",
-        price: "50$",
-        discount: "38$",
+        price: "38$",
+        discount: "51$",
         amount: "0"
     },
     {
@@ -86,6 +86,10 @@ function addCards(newCards) {
         if(newCards[i].discount) {
             discount = newCards[i].discount;
         }
+        else
+        {
+            discount = ``;
+        }
         document.getElementById("cards").innerHTML += `
         <div class="col-12 col-md-6 col-lg-4">
         <div class="card mt-3">
@@ -96,9 +100,9 @@ function addCards(newCards) {
                 <del class="changeWidth">${discount}</del>
                 <h5>${newCards[i].price}</h5>
                 <div class="changeWidth">
-                    <a onclick="changeAmount('-')">-</a>
+                    <a onclick="changeAmount('-')"><i class="bi bi-dash-circle-fill"></i></a>
                     <span>${newCards[i].amount}</span>
-                    <a onclick="changeAmount('+')">+</a>
+                    <a onclick="changeAmount('+')"><i class="bi bi-plus-circle-fill"></i></a>
                 </div>
             </div>
         </div>
@@ -112,6 +116,5 @@ function listProducts(cardType) {
             return e.type;
         }
     });
-    console.log(filteredCards);
     addCards(filteredCards);
 }

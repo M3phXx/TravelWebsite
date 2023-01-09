@@ -219,4 +219,7 @@ footer a {
 .changeWidth {
     width: 33%;
     text-align: center;
+    padding-top: 3px;
+    transform: scale(1.1);
+    cursor: pointer;
 }
