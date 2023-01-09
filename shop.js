@@ -53,6 +53,8 @@ window.onload = () => {
     {
         localStorage.setItem("cards", JSON.stringify(cards));
     }
+    let cartAmount = document.getElementById("cartAmount");
+    cartAmount.innerHTML = JSON.parse(localStorage.getItem("cartAmount"));
 }
 function changeTheme() {
     let theme = JSON.parse(localStorage.getItem("theme") || "[]");
@@ -66,8 +68,8 @@ function changeTheme() {
         theme[1] = "30";
         theme[2] = "0.875"
     }
-    localStorage.setItem("theme", JSON.stringify(theme));
     setTheme(theme);
+    localStorage.getItem(JSON.parse("cards"))
 }
 function setTheme(theme) {
     document.body.style.backgroundColor = 'rgb(' + theme[1] + ',' + theme[1] + ',' + theme[1] + ')';
@@ -155,4 +157,12 @@ function changeAmount(sign , cardId) {
         return e;
     });
     localStorage.setItem("cards", JSON.stringify(newCards));
+    /* Zmienia warosc koszyka */
+    let cartAmount = document.getElementById("cartAmount");
+    let count = 0;
+    let amountOfProducts = newCards.filter((e)=>{
+        count += parseInt(e.amount);
+    });
+    localStorage.setItem("cartAmount", JSON.stringify(count));
+    cartAmount.innerHTML = count;
 }
