@@ -216,3 +216,7 @@ footer a {
     flex-direction: row;
     justify-content: space-between;
 }
+.changeWidth {
+    width: 33%;
+    text-align: center;
+}

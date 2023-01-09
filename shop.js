@@ -59,6 +59,7 @@ let cards = [
         describe: "Around the World",
         img: "./images/shoppingCard-Images/flops1.jpg",
         price: "50$",
+        discount: "38$",
         amount: "0"
     },
     {
@@ -80,7 +81,11 @@ let cards = [
 ]
 function addCards(newCards) {
     document.getElementById("cards").innerText = "";
+    let discount = ``;  
     for (var i = 0; i < newCards.length; i++) {
+        if(newCards[i].discount) {
+            discount = newCards[i].discount;
+        }
         document.getElementById("cards").innerHTML += `
         <div class="col-12 col-md-6 col-lg-4">
         <div class="card mt-3">
@@ -88,11 +93,12 @@ function addCards(newCards) {
             <h4 class="card-header">${newCards[i].name}</h4>
             <div class="card-body">${newCards[i].describe}</div>
             <div class="card-footer cardFooter">
+                <del class="changeWidth">${discount}</del>
                 <h5>${newCards[i].price}</h5>
-                <div>
-                    <span class="mr-2" onclick="minus()">-</span>
+                <div class="changeWidth">
+                    <a onclick="changeAmount('-')">-</a>
                     <span>${newCards[i].amount}</span>
-                    <span class="ml-2" onclick="plus()">+</span>
+                    <a onclick="changeAmount('+')">+</a>
                 </div>
             </div>
         </div>
