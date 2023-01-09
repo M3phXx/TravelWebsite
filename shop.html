@@ -79,41 +79,40 @@
                 <div class="dropdownItem">
                     <a data-toggle="dropdown" href="" class="nav-link text-white">Shoes</a>
                     <ul class="dropdown-menu">
-                        <li><a href="" class="dropdown-item">First</a></li>
-                        <li><a href="" class="dropdown-item">Second</a></li>
-                        <li><a href="" class="dropdown-item">Third</a></li>
+                        <li><a type="button" class="dropdown-item" onclick="listProducts('shoes')">Shoes</a></li>
+                        <li><a type="button" class="dropdown-item" onclick="listProducts('flips')">Flips</a></li>
                     </ul>
                 </div>
                 <div class="dropdownItem">
                     <a data-toggle="dropdown" href="" class="nav-link text-white">Glasses</a>
                     <ul class="dropdown-menu">
-                        <li><a href="" class="dropdown-item">First 2</a></li>
-                        <li><a href="" class="dropdown-item">Second 2</a></li>
-                        <li><a href="" class="dropdown-item">Third 2</a></li>
+                        <li><a class="dropdown-item">First 2</a></li>
+                        <li><a class="dropdown-item">Second 2</a></li>
+                        <li><a class="dropdown-item">Third 2</a></li>
                     </ul>
                 </div>
                 <div class="dropdownItem">
                     <a data-toggle="dropdown" href="" class="nav-link text-white">SuitCases</a>
                     <ul class="dropdown-menu">
-                        <li><a href="" class="dropdown-item">First 3</a></li>
-                        <li><a href="" class="dropdown-item">Second 3</a></li>
-                        <li><a href="" class="dropdown-item">Third 3</a></li>
+                        <li><a class="dropdown-item">First 3</a></li>
+                        <li><a class="dropdown-item">Second 3</a></li>
+                        <li><a class="dropdown-item">Third 3</a></li>
                     </ul>
                 </div>
                 <div class="dropdownItem">
                     <a data-toggle="dropdown" href="" class="nav-link text-white">Accessories</a>
                     <ul class="dropdown-menu">
-                        <li><a href="" class="dropdown-item">First 4</a></li>
-                        <li><a href="" class="dropdown-item">Second 4</a></li>
-                        <li><a href="" class="dropdown-item">Third 4</a></li>
+                        <li><a class="dropdown-item">First 4</a></li>
+                        <li><a class="dropdown-item">Second 4</a></li>
+                        <li><a class="dropdown-item">Third 4</a></li>
                     </ul>
                 </div>
                 <div class="dropdownItem">
                     <a data-toggle="dropdown" href="" class="nav-link text-white">Beer</a>
                     <ul class="dropdown-menu">
-                        <li><a href="" class="dropdown-item">First 5</a></li>
-                        <li><a href="" class="dropdown-item">Second 5</a></li>
-                        <li><a href="" class="dropdown-item">Third 5</a></li>
+                        <li><a class="dropdown-item">First 5</a></li>
+                        <li><a class="dropdown-item">Second 5</a></li>
+                        <li><a class="dropdown-item">Third 5</a></li>
                     </ul>
                 </div>
             </ul>
@@ -125,7 +124,70 @@
     </div>
     <!--cartBody-->
     <div class="container">
-        
+        <div class="row">
+            <div class="filterMenu col-3">
+            </div>
+            <div class="cards col-9 row cardContainer" id="cards">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card mt-3">
+                        <img src="./images/shoppingCard-Images/sportShoes.jpg" alt="" class="w-100" height="200px">
+                        <h4 class="card-header">Klapki Zajebiste</h4>
+                        <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, deserunt.
+                        </div>
+                        <div class="card-footer cardFooter"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card mt-3">
+                        <img src="./images/shoppingCard-Images/flops1.jpg" alt="" class="w-100" height="200px">
+                        <h4 class="card-header">Japonki</h4>
+                        <div class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
+                            aliquam.
+                        </div>
+                        <div class="card-footer cardFooter">
+                            <h5>$50</h5>
+                            <div>
+                                <span class="mr-2">-</span>
+                                <span>5</span>
+                                <span class="ml-2">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card mt-3">
+                        <img src="./images/shoppingCard-Images/flops2.jpg" alt="" class="w-100" height="200px">
+                        <h4 class="card-header">Buty zimowe</h4>
+                        <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, qui.
+                        </div>
+                        <div class="card-footer cardFooter">
+                            <h5>$50</h5>
+                            <div>
+                                <span class="mr-2">-</span>
+                                <span>5</span>
+                                <span class="ml-2">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card mt-3">
+                        <img src="./images//shoppingCard-Images/flops3.jpg" alt="" class="w-100" height="200px">
+                        <h4 class="card-header">Stopy Trolla</h4>
+                        <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, rerum.
+                        </div>
+                        <div class="card-footer cardFooter">
+                            <h5>$50</h5>
+                            <div>
+                                <span class="mr-2">-</span>
+                                <span>5</span>
+                                <span class="ml-2">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--footer-->
     </main>

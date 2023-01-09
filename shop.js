@@ -1,5 +1,5 @@
-window.onload = ()=> {
-    if(JSON.parse(localStorage.getItem("theme"))) {
+window.onload = () => {
+    if (JSON.parse(localStorage.getItem("theme"))) {
         let theme = JSON.parse(localStorage.getItem("theme"));
         setTheme(theme);
     }
@@ -42,4 +42,70 @@ function setTheme(theme) {
         themeButton.classList = "rounded bg-dark text-light border-light";
         themeButton.innerHTML = "Dark";
     }
+}
+let filteredCards = [];
+let cards = [
+    {
+        name: "Japonki",
+        type: "flips",
+        describe: "Around the World",
+        img: "./images/shoppingCard-Images/flops1.jpg",
+        price: "50$",
+        amount: "0"
+    },
+    {
+        name: "Japonki2",
+        type: "flips",
+        describe: "Around the World",
+        img: "./images/shoppingCard-Images/flops1.jpg",
+        price: "50$",
+        amount: "0"
+    },
+    {
+        name: "Japonki3",
+        type: "flips",
+        describe: "Around the World",
+        img: "./images/shoppingCard-Images/flops1.jpg",
+        price: "50$",
+        amount: "0"
+    },
+    {
+        name: "Japonki4",
+        type: "shoes",
+        describe: "Around the World",
+        img: "./images/shoppingCard-Images/flops1.jpg",
+        price: "50$",
+        amount: "0"
+    }
+]
+function addCards(newCards) {
+    document.getElementById("cards").innerText = "";
+    for (var i = 0; i < newCards.length; i++) {
+        document.getElementById("cards").innerHTML += `
+        <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mt-3">
+            <img src="${newCards[i].img}" alt="" class="w-100" height="200px">
+            <h4 class="card-header">${newCards[i].name}</h4>
+            <div class="card-body">${newCards[i].describe}</div>
+            <div class="card-footer cardFooter">
+                <h5>${newCards[i].price}</h5>
+                <div>
+                    <span class="mr-2" onclick="minus()">-</span>
+                    <span>${newCards[i].amount}</span>
+                    <span class="ml-2" onclick="plus()">+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        `;
+    }
+}
+function listProducts(cardType) {
+    filteredCards = cards.filter(function (e) {
+        if (e.type.toLowerCase().includes(cardType)) {
+            return e.type;
+        }
+    });
+    console.log(filteredCards);
+    addCards(filteredCards);
 }

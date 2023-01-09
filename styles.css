@@ -95,7 +95,6 @@ footer a {
 #cards {
     overflow-y: scroll;
     height: 720px;
-    
 }
 #bottomCards {
     margin-bottom: 70px;
@@ -120,10 +119,6 @@ footer a {
 
     .carousel-item {
         min-height: 12rem;
-    }
-
-    .cardsContainer {
-        width: 80%;
     }
 
     #img {
@@ -174,6 +169,7 @@ footer a {
     border-radius: 20px;
 }
 /*------------------------------------------Shopping Cart--------------------------------------*/
+                                    /*---------Navbar---------*/
 .shopMenu {
     position: relative;
     display: flex;
@@ -212,4 +208,11 @@ footer a {
 }
 .dropdownItem {
     position: relative;
+}
+                                    /*---------filterMenu---------*/
+                                    /*---------products---------*/
+.cardFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
