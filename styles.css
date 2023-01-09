@@ -97,6 +97,9 @@ footer a {
     height: 720px;
     
 }
+#bottomCards {
+    margin-bottom: 70px;
+}
 #info {
     text-decoration: none;
     color: rgb(0, 105, 0);
@@ -180,10 +183,14 @@ footer a {
 .navbarBox {
     top: -15px;
     position: absolute;
+    padding-right: 30px;
     width: 25%;
     border-bottom-right-radius: 150px;
     height: 70px;
     background-color: rgb(155, 44, 44);
+    color: rgb(33,225,33);
+    font-size: 40px;
+    text-align: center;
 }
 .bi-basket {
     margin-left: auto;
