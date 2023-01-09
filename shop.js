@@ -76,13 +76,15 @@ function changeTheme() {
         theme[0] = "white";
         theme[1] = "30";
         theme[2] = "0.875"
+        console.log("xD");
     }
     setTheme(theme);
-    localStorage.getItem(JSON.parse("cards"))
+    localStorage.setItem("theme", JSON.stringify(theme));
 }
 function setTheme(theme) {
     document.body.style.backgroundColor = 'rgb(' + theme[1] + ',' + theme[1] + ',' + theme[1] + ')';
     let themeButton = document.getElementById("themeButton");
+    document.getElementsByClassName("filters")[0].style.color = theme[0];
     let cards = document.getElementsByClassName("card");
     for (var i = 0; i < cards.length; i++) {
         cards[i].style.border = `1px solid rgba(0,0,0,${theme[2]})`;
@@ -194,4 +196,32 @@ function changeAmount(sign , cardId) {
     });
     localStorage.setItem("cartAmount", JSON.stringify(count));
     cartAmount.innerHTML = count;
+}
+
+function newAlert() {
+    let navContainer = document.getElementsByClassName("navContainer")[0];
+    let newAlert = document.createElement("div");
+    newAlert.classList.add("alert", "alert-warning", "alert-dismissible", "fade", "show");
+    newAlert.innerHTML = `
+        <h4>Zamowienie zlozone</h4>
+        <p>Twoje zamowienie zostalo zgloszone poprawnie!</p>
+        <button class="close" data-dismiss="alert">&times;</button>
+        `;
+        let b5Alert = new bootstrap.Alert(newAlert);
+        navContainer.appendChild(newAlert);
+        setTimeout(()=>{
+            b5Alert.close();
+        },4000);
+}
+function orderProducts() {
+    newAlert();
+    clearCart();
+    let cartAmount = document.getElementById("cartAmount");
+    cartAmount.innerHTML = "";
+    let localProducts = JSON.parse(localStorage.getItem("cards"));
+    let clearAmount = localProducts.filter((e)=>{
+        e.amount = "0";
+        return e;
+    });
+    localStorage.setItem("cards", JSON.stringify(clearAmount));
 }

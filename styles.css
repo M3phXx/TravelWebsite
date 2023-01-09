@@ -215,8 +215,11 @@ footer a {
 }
                                     /*---------filterMenu---------*/
 .filterMenu {
-    color:white;
     text-align: center;
+}
+#asideButton {
+    text-decoration: none;
+    margin-bottom: 15px;
 }
                                     /*---------products---------*/
 .cardFooter {

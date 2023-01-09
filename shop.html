@@ -33,6 +33,7 @@
             </div>
         </div>
     </nav>
+    <div class="navContainer"></div>
     <!-------cart------->
     <div class="navbar navbar-expand-md  navbar-dark mt-5 mb-5">
         <div class="navbarBox">Shop</div>
@@ -107,7 +108,7 @@
 
                 </div>
                 <div class="cartButtonContainer">
-                    <button class="btn btn-warning" type="button">Order</button>
+                    <button class="btn btn-warning" type="button" data-dismiss="modal" onclick="orderProducts()">Order</button>
                     <button class="btn btn-secondary" type="button" data-dismiss="modal" onclick="clearCart()">Close</button>
                 </div>
             </div>
@@ -120,12 +121,12 @@
             <!--cartAside-->
             <div class="filterMenu col-4 col-sm-3 col-md-2">
                 <div class="filters">
-                    <h4>Filters</h4>
+                    <h4 class="mb-5">Filters</h4>
                     <div>
-                        <a type="button" class="btn text-white mb-3">Discounts</a>
+                        <a type="button" id="asideButton">Discounts</a>
                     </div>
                     <div>
-                        <a type="button" class="btn text-white">Price range:</a>
+                        <a type="button" id="asideButton">Price range:</a>
                     </div>
                 </div>
             </div>
@@ -147,7 +148,6 @@
             </div>
         </div>
     </footer>
-
     <!----------------------------------------------Scripts---------------------------------------------->
     <script src="shop.js"></script>
     <script src="changePost.js"></script>
