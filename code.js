@@ -14,7 +14,7 @@ window.onload = () => {
         let theme = [];
         theme[0] = "black";
         theme[1] = "225";
-        theme[2] = "0.125"
+        theme[2] = "0.125";
         localStorage.setItem("theme", JSON.stringify(theme));
     }
     //..

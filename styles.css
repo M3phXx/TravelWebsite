@@ -12,9 +12,6 @@ body {
 .navbar, #footer {
     background-color: rgb(44, 44, 44);
 }
-.navbar-links-container {
-
-}
 .navbar-link {
     text-decoration: none;
     color: white;
@@ -88,7 +85,8 @@ footer a {
 #cards {
     overflow: scroll;
     overflow-x: hidden;
-    max-height: 720px;
+    height: 720px;
+    
 }
 #info {
     text-decoration: none;
