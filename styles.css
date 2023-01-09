@@ -16,8 +16,8 @@ body {
     text-decoration: none;
     color: white;
 }
-.sl {
-    transform: scale(0.8);
+.ts {
+    transform: scale(0.9);
 }
 .ad1 {
     background: url(images/vacation.png) no-repeat center center;
@@ -61,10 +61,11 @@ footer a {
     background-size: cover;
     background-image: url(images/lake.jpg);
 }
-
-#changeTheme {
-    display: flex;
-    flex-direction: column;
+#navbarMenu {
+    padding: 0px 10px;
+}
+#theme {
+    padding: 0;
 }
 #postContainer {
     height: 1000px;

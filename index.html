@@ -20,11 +20,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="mr-auto mb-2 mb-md-0 navbar-links-container">
-                    <a href="" class="navbar-link mr-3">Shop</a>
-                    <a href="" class="navbar-link mr-3">Hotels</a>
-                    <a href="" class="navbar-link mr-0">Contact</a>
+                    <a href="index.html" class="navbar-link mr-3">Main</a>
+                    <a href="shop.html" class="navbar-link mr-3">Shop</a>
+                    <a href="hotels.html" class="navbar-link mr-3">Hotels</a>
+                    <a href="contact.html" class="navbar-link">Contact</a>
                 </ul>
-                <form action="" class="d-flex mt-3 mt-md-0">
+                <form action="" class="d-flex mt-3 mt-md-0 ts">
                     <div class="input-group">
                         <input type="search" class="form-control rounded-left" placeholder="Search" aria-label="Search"
                             aria-describedby="search-addon" id="searchInput" />
@@ -34,12 +35,13 @@
                         Login
                     </button>
                 </form>
-                <ul class="mb-2 mb-md-0 mt-3 mt-md-0">
-                    <button onclick="changeTheme()" class="rounded bg-dark text-light border-light" id="themeButton">Dark</button>
+                <ul class="mb-2 ml-4 mb-md-0 mt-3 mt-md-0" id="theme">
+                    <button onclick="changeTheme()" class="rounded bg-dark text-light border-light"
+                        id="themeButton">Dark</button>
                 </ul>
             </div>
         </div>
-            <!--Navbar Modal-->
+        <!--Navbar Modal-->
         <div class="modal fade" id="modal2" tabIndex="-1" data-backdrop="static">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -172,11 +174,11 @@
                             <li class="page-item"><a onclick="changePage(-2)" tabindex="-1" aria-disabled="true"
                                     class="page-link">-</a>
                             </li>
-                            <li class="page-item"><a onclick="changePage(1)" class="page-link active">1</a></li>
-                            <li class="page-item"><a onclick="changePage(2)" class="page-link">2</a></li>
-                            <li class="page-item"><a onclick="changePage(3)" class="page-link">3</a></li>
-                            <li class="page-item"><a onclick="changePage(4)" class="page-link">4</a></li>
-                            <li class="page-item"><a onclick="changePage(-1)" class="page-link">+</a></li>
+                            <li class="page-item"><a onclick="changePost(1)" class="page-link active">1</a></li>
+                            <li class="page-item"><a onclick="changePost(2)" class="page-link">2</a></li>
+                            <li class="page-item"><a onclick="changePost(3)" class="page-link">3</a></li>
+                            <li class="page-item"><a onclick="changePost(4)" class="page-link">4</a></li>
+                            <li class="page-item"><a onclick="changePost(-1)" class="page-link">+</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -357,9 +359,10 @@
             </div>
         </div>
     </footer>
-<!----------------------------------------------Scripts---------------------------------------------->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!----------------------------------------------Scripts---------------------------------------------->
+    <script src="changePage.js"></script>
     <script src="code.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
