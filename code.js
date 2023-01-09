@@ -266,7 +266,7 @@ function changePage(pageNumber) {
     switch (pageNumber) {
         case 1: {
             saveNumber = 1;
-            posts.innerHTML = `<div class="blog-post">
+            posts.innerHTML = `<div class="blog-post pl-1">
             <img src="images/Bosnia.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
             <h4 class="blog-post-title">Bosnia Road Trip</h4>
             <p class="blog-post-date">Feb 9, 2020 <a href="#">Harry Callum</a></p>
@@ -289,7 +289,7 @@ function changePage(pageNumber) {
                 recommend not making concrete plans but having a rough idea where you want to start and end.
                 Enter Bosnia, go find a river and drive along it.</p>
         </div>
-        <div class="blog-post mt-5">
+        <div class="blog-post mt-5 pl-1">
             <img src="images/pulaCroatia.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
             <h4 class="blog-post-title">Things to do in Pula, Croatia</h4>
             <p class="blog-post-date">Nov 14, 2019 <a href="#">Anna Bernard</a></p>
@@ -315,7 +315,7 @@ function changePage(pageNumber) {
         case 2: {
             saveNumber = 2;
             posts.innerHTML = `
-            <div class="blog-post">
+            <div class="blog-post pl-1">
                         <img src="images/post1Picture.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
                         <h4 class="blog-post-title">Mokra Gora</h4>
                         <p class="blog-post-date">Jan 2, 2019 <a href="#">Paula Middleton</a></p>
@@ -343,7 +343,7 @@ function changePage(pageNumber) {
                                 <li>Tara National Park</li>
                             </ul>
                     </div>
-                    <div class="blog-post mt-5">
+                    <div class="blog-post mt-5 pl-1">
                         <img src="images/camera.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
                         <h4 class="blog-post-title">The Ultimate Turkey Itinerary 10 Days</h4>
                         <p class="blog-post-date">Aug 14, 2019 <a href="#">Clare Stokes</a></p>
@@ -369,7 +369,7 @@ function changePage(pageNumber) {
             break;
         case 3: {
             saveNumber = 3;
-            posts.innerHTML = `                    <div class="blog-post">
+            posts.innerHTML = `                    <div class="blog-post pl-1">
             <img src="images/amsterdam.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
             <h4 class="blog-post-title">The Ultimate Amsterdam Nightlife Guide</h4>
             <p class="blog-post-date">Nov 19, 2019 <a href="#">Brian Hunter</a></p>
@@ -405,7 +405,7 @@ function changePage(pageNumber) {
                 district!
             </p>
         </div>
-        <div class="blog-post mt-5">
+        <div class="blog-post mt-5 pl-1">
             <img src="images/netherlands.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
             <h4 class="blog-post-title">Netherlands</h4>
             <p class="blog-post-date">Nov 14, 2019 <a href="#">Peter Lawton</a></p>
@@ -432,7 +432,7 @@ function changePage(pageNumber) {
             break;
         case 4: {
             saveNumber = 4;
-            posts.innerHTML = `<div class="blog-post">
+            posts.innerHTML = `<div class="blog-post pl-1">
             <img src="images/campervan.jpg" alt="" class="rounded float-right w-50 ml-4 mb-4" id="img">
             <h4 class="blog-post-title">Traveling Europe by Campervan</h4>
             <p class="blog-post-date">Dec 6, 2019 <a href="#">Jennifer Fisher</a></p>
