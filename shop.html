@@ -20,7 +20,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="mr-auto mb-2 mb-md-0 navbar-links-container">
+                <ul class="mr-auto mb-2 mb-md-0">
                     <a href="index.html" class="navbar-link mr-3">Main</a>
                     <a href="shop.html" class="navbar-link mr-3">Shop</a>
                     <a href="" class="navbar-link mr-3">Hotels</a>
@@ -70,35 +70,75 @@
         </div>
     </nav>
     <!--Cart-->
-    <div class="navbar navbarMenu">
+    <div class="navbar navbar-expand-md  navbar-dark mt-5">
         <div class="navbarBox"></div>
-        <div class="menuItems">
-            <a href="" class="navbar-link mr-3">Klapki</a>
-            <a href="" class="navbar-link mr-3">Okulary</a>
-            <a href="" class="navbar-link mr-3">Piwo</a>
-            <a href="" class="navbar-link mr-3">Akcesoria</a>
-            <a href="" class="navbar-link mr-3">Piwo</a>
-        </div>
-        <div class="cart">
-            <i class="bi bi-basket"></i>
-            <div class="cartAmount text-white">0</div>
+        <button class="navbar-toggler mr-3 ml-auto" data-toggle="collapse" data-target="#shopMenu"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse shopMenu" id="shopMenu">
+            <ul class="navbar-nav">
+                <div class="dropdownItem">
+                    <a data-toggle="dropdown" href="" class="nav-link text-white">Shoes</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">First</a></li>
+                        <li><a href="" class="dropdown-item">Second</a></li>
+                        <li><a href="" class="dropdown-item">Third</a></li>
+                    </ul>
+                </div>
+                <div class="dropdownItem">
+                    <a data-toggle="dropdown" href="" class="nav-link text-white">Glasses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">First 2</a></li>
+                        <li><a href="" class="dropdown-item">Second 2</a></li>
+                        <li><a href="" class="dropdown-item">Third 2</a></li>
+                    </ul>
+                </div>
+                <div class="dropdownItem">
+                    <a data-toggle="dropdown" href="" class="nav-link text-white">SuitCases</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">First 3</a></li>
+                        <li><a href="" class="dropdown-item">Second 3</a></li>
+                        <li><a href="" class="dropdown-item">Third 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdownItem">
+                    <a data-toggle="dropdown" href="" class="nav-link text-white">Accessories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">First 4</a></li>
+                        <li><a href="" class="dropdown-item">Second 4</a></li>
+                        <li><a href="" class="dropdown-item">Third 4</a></li>
+                    </ul>
+                </div>
+                <div class="dropdownItem">
+                    <a data-toggle="dropdown" href="" class="nav-link text-white">Beer</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">First 5</a></li>
+                        <li><a href="" class="dropdown-item">Second 5</a></li>
+                        <li><a href="" class="dropdown-item">Third 5</a></li>
+                    </ul>
+                </div>
+            </ul>
+            <div class="cart">
+                <i class="bi bi-basket"></i>
+                <div class="cartAmount text-white">0</div>
+            </div>
         </div>
     </div>
-            <!--footer-->
-        </main>
-        <footer id="footer" class="text-light mt-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        Made by M3phX
-                    </div>
-                    <div class="col-12 text-center">
-                        Copyright by Blog. All rights reserved.
-                    </div>
+
+    <!--footer-->
+    </main>
+    <footer id="footer" class="text-light mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    Made by M3phX
+                </div>
+                <div class="col-12 text-center">
+                    Copyright by Blog. All rights reserved.
                 </div>
             </div>
-        </footer>
-    
+        </div>
+    </footer>
+
     <!----------------------------------------------Scripts---------------------------------------------->
     <script src="shop.js"></script>
     <script src="changePost.js"></script>
