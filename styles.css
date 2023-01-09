@@ -66,7 +66,11 @@ footer a {
     display: flex;
     flex-direction: column;
 }
-
+#postContainer {
+    height: 1000px;
+    overflow-y:scroll;
+    direction:rtl;
+}
 #login,
 #register {
     text-decoration: none;
@@ -83,8 +87,7 @@ footer a {
     top: -28px;
 }
 #cards {
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow-y: scroll;
     height: 720px;
     
 }
