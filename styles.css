@@ -210,6 +210,10 @@ footer a {
     position: relative;
 }
                                     /*---------filterMenu---------*/
+.filterMenu {
+    color:white;
+    text-align: center;
+}
                                     /*---------products---------*/
 .cardFooter {
     display: flex;

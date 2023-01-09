@@ -10,6 +10,49 @@ window.onload = () => {
         theme[2] = "0.125";
         localStorage.setItem("theme", JSON.stringify(theme));
     }
+    let cards = [
+        {
+            id: "1",
+            name: "Japonki",
+            type: "flips",
+            describe: "Around the World",
+            img: "./images/shoppingCard-Images/flops1.jpg",
+            price: "50$",
+            amount: "0"
+        },
+        {
+            id: "2",
+            name: "Japonki22",
+            type: "flips",
+            describe: "Around the World",
+            img: "./images/shoppingCard-Images/flops1.jpg",
+            price: "38$",
+            discount: "51$",
+            amount: "0"
+        },
+        {
+            id: "3",
+            name: "Japonki3",
+            type: "flips",
+            describe: "Around the World",
+            img: "./images/shoppingCard-Images/flops1.jpg",
+            price: "50$",
+            amount: "0"
+        },
+        {
+            id: "4",
+            name: "Japonki4",
+            type: "shoes",
+            describe: "Around the World",
+            img: "./images/shoppingCard-Images/flops1.jpg",
+            price: "50$",
+            amount: "0"
+        }
+    ]
+    if(!(JSON.parse(localStorage.getItem("cards"))))
+    {
+        localStorage.setItem("cards", JSON.stringify(cards));
+    }
 }
 function changeTheme() {
     let theme = JSON.parse(localStorage.getItem("theme") || "[]");
@@ -43,45 +86,20 @@ function setTheme(theme) {
         themeButton.innerHTML = "Dark";
     }
 }
-let filteredCards = [];
-let cards = [
-    {
-        name: "Japonki",
-        type: "flips",
-        describe: "Around the World",
-        img: "./images/shoppingCard-Images/flops1.jpg",
-        price: "50$",
-        amount: "0"
-    },
-    {
-        name: "Japonki22",
-        type: "flips",
-        describe: "Around the World",
-        img: "./images/shoppingCard-Images/flops1.jpg",
-        price: "38$",
-        discount: "51$",
-        amount: "0"
-    },
-    {
-        name: "Japonki3",
-        type: "flips",
-        describe: "Around the World",
-        img: "./images/shoppingCard-Images/flops1.jpg",
-        price: "50$",
-        amount: "0"
-    },
-    {
-        name: "Japonki4",
-        type: "shoes",
-        describe: "Around the World",
-        img: "./images/shoppingCard-Images/flops1.jpg",
-        price: "50$",
-        amount: "0"
-    }
-]
+function listProducts(cardType) {
+    let filteredCards = [];
+    let localCards = JSON.parse(localStorage.getItem("cards"));
+    filteredCards = localCards.filter(function (e) {
+        if (e.type.toLowerCase().includes(cardType)) {
+            return e.type;
+        }
+    });
+    addCards(filteredCards);
+}
+
 function addCards(newCards) {
     document.getElementById("cards").innerText = "";
-    let discount = ``;  
+    let discount = ``;
     for (var i = 0; i < newCards.length; i++) {
         if(newCards[i].discount) {
             discount = newCards[i].discount;
@@ -100,9 +118,9 @@ function addCards(newCards) {
                 <del class="changeWidth">${discount}</del>
                 <h5>${newCards[i].price}</h5>
                 <div class="changeWidth">
-                    <a onclick="changeAmount('-')"><i class="bi bi-dash-circle-fill"></i></a>
-                    <span>${newCards[i].amount}</span>
-                    <a onclick="changeAmount('+')"><i class="bi bi-plus-circle-fill"></i></a>
+                    <a onclick="changeAmount('-', ${newCards[i].id})"><i class="bi bi-dash-circle-fill"></i></a>
+                    <span id="${newCards[i].id}">${newCards[i].amount}</span>
+                    <a onclick="changeAmount('+', ${newCards[i].id})"><i class="bi bi-plus-circle-fill"></i></a>
                 </div>
             </div>
         </div>
@@ -110,11 +128,31 @@ function addCards(newCards) {
         `;
     }
 }
-function listProducts(cardType) {
-    filteredCards = cards.filter(function (e) {
-        if (e.type.toLowerCase().includes(cardType)) {
-            return e.type;
+function changeAmount(sign , cardId) {
+    /*pobiera kartę po cardId*/
+    let localCards = JSON.parse(localStorage.getItem("cards"));
+    let cardAmount = document.getElementById(cardId);
+    let specificCard = localCards.filter((e) => {
+        if(e.id == cardId){
+            return e.id;
         }
     });
-    addCards(filteredCards);
+    /*Zmienia wartosc amount w card i localCards*/
+    switch(sign) {
+        case "+":
+            cardAmount.innerHTML = `${parseInt(cardAmount.innerHTML) + 1}`;
+            specificCard[0].amount = parseInt(specificCard[0].amount) + 1;
+        break;
+        case "-":
+            cardAmount.innerHTML = `${parseInt(cardAmount.innerHTML) - 1}`;
+            specificCard[0].amount = parseInt(specificCard[0].amount) - 1;
+        break;
+    }
+    let newCards = localCards.filter((e)=>{
+        if(e.id == specificCard.id) {
+            e = specificCard;
+        }
+        return e;
+    });
+    localStorage.setItem("cards", JSON.stringify(newCards));
 }
