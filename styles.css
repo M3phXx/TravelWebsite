@@ -34,7 +34,9 @@ body {
     height: 200px;
     border-radius: 2px;
 }
-
+.card {
+    height: 340px;
+}
 .form-box {
     width: 20rem;
 }
@@ -226,7 +228,7 @@ footer a {
 }
                                     /*---------products---------*/
 .cardBody {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .cardFooter {
     display: flex;

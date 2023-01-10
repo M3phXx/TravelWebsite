@@ -1,4 +1,5 @@
 window.onload = () => {
+    discountFilter();
     if (JSON.parse(localStorage.getItem("theme"))) {
         let theme = JSON.parse(localStorage.getItem("theme"));
         setTheme(theme);
@@ -37,6 +38,7 @@ window.onload = () => {
             describe: "Around the World",
             img: "./images/shoppingCard-Images/flops1.jpg",
             price: "50$",
+            discount: "51$",
             amount: "0"
         },
         {
@@ -120,17 +122,17 @@ function setTheme(theme) {
 function clearCart() {
     document.getElementById("cartCards").innerHTML = "";
 }
+/*-------------Filters--------------*/
 function listProducts(cardType) {
     clearCart();
     let localCards = JSON.parse(localStorage.getItem("cards"));
     let filteredCards = localCards.filter(function (e) {
-        if (e.type.toLowerCase().includes(cardType)) {
+        if (e.type.includes(cardType)) {
             return e.type;
         }
     });
     let src = document.getElementById("cards");
     addCards(filteredCards, src);
-    document.getElementById("cards")
 }
 function backetAddCarts() {
 
@@ -143,6 +145,18 @@ function backetAddCarts() {
     let src = document.getElementById("cartCards");
     addCards(filteredCards, src);
 }
+function discountFilter() {
+    let localCards = JSON.parse(localStorage.getItem("cards"));
+        let filteredCards = localCards.filter(function (e) {
+        if (e.discount) {
+            return e.type;
+        }
+    });
+    console.log(filteredCards);
+    let src = document.getElementById("cards");
+    addCards(filteredCards, src);
+}
+/*-------------addCards--------------*/
 function addCards(newCards, source) {
     source.innerHTML = "";
     let discount = ``;
