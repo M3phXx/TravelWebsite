@@ -105,10 +105,6 @@ function setTheme(theme) {
     document.body.style.backgroundColor = 'rgb(' + theme[1] + ',' + theme[1] + ',' + theme[1] + ')';
     let themeButton = document.getElementById("themeButton");
     document.getElementsByClassName("filters")[0].style.color = theme[0];
-    let cards = document.getElementsByClassName("card");
-    for (var i = 0; i < cards.length; i++) {
-        cards[i].style.border = `1px solid rgba(0,0,0,${theme[2]})`;
-    }
     if (theme[1] == "30") {
         themeButton.classList = "rounded border-light";
         themeButton.innerHTML = "Light";

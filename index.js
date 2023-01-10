@@ -65,10 +65,6 @@ function setTheme(theme) {
     document.getElementById("postContainer").style.color = theme[0];
     document.getElementById("bottomCards").style.color = theme[0];
     document.getElementById("asideBar").style.color = theme[0];
-    let cards = document.getElementsByClassName("card");
-    for (var i = 0; i < cards.length; i++) {
-        cards[i].style.border = `1px solid rgba(0,0,0,${theme[2]})`;
-    }
     if (theme[1] == "30") {
         themeButton.classList = "rounded border-light";
         themeButton.innerHTML = "Light";
