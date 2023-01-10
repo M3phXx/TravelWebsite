@@ -426,9 +426,6 @@ function filterDiscounts(minmax) {
     let cards = JSON.parse(localStorage.getItem("cards"));
     let minValue = document.getElementById("dicountFilterMin").value;
     let maxValue = document.getElementById("dicountFilterMax").value;
-
-    console.log(minValue);
-    console.log(maxValue);
     let priceRangeCards = cards.filter((e)=>{
         if(parseInt(e.price) <= maxValue && parseInt(e.price) >= minValue)
         {
@@ -452,7 +449,7 @@ function addCards(newCards, source) {
         source.innerHTML += `
         <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card mt-3">
-            <img src="${newCards[i].img}" alt="" class="w-100 cart-img-top2" height="200px">
+            <img src="${newCards[i].img}" alt="" class="w-100 card-img-top2" height="200px">
             <h4 class="card-header">${newCards[i].name}</h4>
             <div class="card-body">
             <h6>${newCards[i].type}<h6>

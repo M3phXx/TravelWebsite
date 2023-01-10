@@ -30,11 +30,11 @@ body {
 .ad3 {
     background: url(images/panorama.jpg) no-repeat center center;
 }
-.cart-img-top {
+.card-img-top {
     height: 200px;
     border-radius: 2px;
 }
-.cart-img-top2 {
+.card-img-top2 {
     height: 150px;
     border-radius: 2px;
 }
@@ -202,10 +202,13 @@ footer a {
     font-size: 40px;
     text-align: center;
 }
+.cart {
+        align-items: center;
+        height: 30px;
+}
 .bi-basket {
     margin-left: auto;
-    position: relative;
-    margin-right: 30px;
+    margin-right:30px;
     background-color: rgb(225, 225, 225);
     color:#212529;
     padding: 5px;
@@ -213,9 +216,9 @@ footer a {
     border-radius: 4px;
 }
 .cartAmount {
-    position: absolute;
-    top: -10px;
-    right: 20px;
+    position: relative;
+    top: -45px;
+    right: -20px;
     background-color: red;
     width: 20px;
     text-align: center;
