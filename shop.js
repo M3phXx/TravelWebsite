@@ -108,8 +108,81 @@ window.onload = () => {
             price: "15$",
             discount: "29.99$",
             amount: "0"
-        }
-        
+        },
+        {
+            id: "11",
+            name: "Box",
+            type: "suitcases",
+            describe: "",
+            img: "./images/shoppingCard-Images/suitcases/suitcasesBox.jpg",
+            price: "115.99$",
+            amount: "0"
+        },
+        {
+            id: "12",
+            name: "Vintage Open",
+            type: "suitcases",
+            describe: "",
+            img: "./images/shoppingCard-Images/suitcases/suitcasesVintageOpen.jpg",
+            price: "79.99$",
+            amount: "0"
+        },
+        {
+            id: "13",
+            name: "Teddy Bear",
+            type: "suitcases",
+            describe: "",
+            img: "./images/shoppingCard-Images/suitcases/suitcaseTeddyBear.jpg",
+            price: "79.99$",
+            discount: "89.99$",
+            amount: "0"
+        },
+        {
+            id: "14",
+            name: "Art",
+            type: "backpacks",
+            describe: "",
+            img: "./images/shoppingCard-Images/backpacks/backpacksArt.jpg",
+            price: "22.99$",
+            amount: "0"
+        },
+        {
+            id: "15",
+            name: "Outdoor",
+            type: "backpacks",
+            describe: "",
+            img: "./images/shoppingCard-Images/backpacks/backpacksOutdoor.jpg",
+            price: "35.99$",
+            amount: "0"
+        },
+        {
+            id: "16",
+            name: "Park Walk",
+            type: "backpacks",
+            describe: "",
+            img: "./images/shoppingCard-Images/backpacks/backpacksParkWalk.jpg",
+            price: "19.99$",
+            amount: "0"
+        },
+        {
+            id: "17",
+            name: "School",
+            type: "backpacks",
+            describe: "",
+            img: "./images/shoppingCard-Images/backpacks/backpacksSchool.jpg",
+            price: "25.99$",
+            amount: "0"
+        },
+        {
+            id: "18",
+            name: "Snow",
+            type: "backpacks",
+            describe: "",
+            img: "./images/shoppingCard-Images/backpacks/backpacksSnow.jpg",
+            price: "29.99$",
+            discount: "35.99$",
+            amount: "0"
+        },
     ]
     /* Tworzy localCards */
     if(!(JSON.parse(localStorage.getItem("cards"))))
@@ -204,7 +277,10 @@ function addCards(newCards, source) {
         <div class="card mt-3">
             <img src="${newCards[i].img}" alt="" class="w-100" height="200px">
             <h4 class="card-header">${newCards[i].name}</h4>
-            <div class="card-body">${newCards[i].describe}</div>
+            <div class="card-body">
+            <h6>${newCards[i].type}<h6>
+            ${newCards[i].describe}
+            </div>
             <div class="card-footer cardFooter">
                 <del class="changeWidth">${discount}</del>
                 <h5>${newCards[i].price}</h5>
