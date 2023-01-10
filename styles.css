@@ -225,9 +225,11 @@ footer a {
     border-bottom-right-radius: 150px;
     height: 70px;
     background-color: rgb(155, 44, 44);
-    color: rgb(33, 225, 33);
+    color: rgb(33, 33, 33);
     font-size: 40px;
     text-align: center;
+    font-family: 'Anton', sans-serif;
+    box-shadow: 2px 5px 100px black;
 }
 
 .cart {
@@ -277,6 +279,7 @@ footer a {
     text-decoration: none;
     background-color: rgb(33, 125, 33);
     border-radius: 3px;
+    font-size: large;
 }
 
 .filterButton:hover {
@@ -379,8 +382,13 @@ footer a {
     height: 150px;
 }
 .hotelsLogoText {
-    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 20px 10px #000000;
+    padding-left: 35px;
+    font-family: 'Dancing Script', cursive;
     color: white; 
-    
-    font-size: 80px;
+    font-size: 100px;
+}
+.logoInner>img {
+    margin-top: 5px;
+    width: 100px;
 }

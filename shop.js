@@ -456,8 +456,8 @@ function addCards(newCards, source) {
             ${newCards[i].describe}
             </div>
             <div class="card-footer cardFooter">
-                <del class="changeWidth">${discount}</del>
-                <h5>${newCards[i].price}$</h5>
+                <del class="changeWidth text-danger">${discount}</del>
+                <h5 class="text-success">${newCards[i].price}$</h5>
                 <div class="changeWidth">
                     <a onclick="changeAmount('-', ${newCards[i].id})"><i class="bi bi-dash-circle-fill"></i></a>
                     <span id="${newCards[i].id}">${newCards[i].amount}</span>
@@ -515,8 +515,8 @@ function newAlert() {
     let newAlert = document.createElement("div");
     newAlert.classList.add("alert", "alert-warning", "alert-dismissible", "fade", "show");
     newAlert.innerHTML = `
-        <h4>Zamowienie zlozone</h4>
-        <p>Twoje zamowienie zostalo zgloszone poprawnie!</p>
+        <h4>Order placed</h4>
+        <p>Your order has been submitted correctly!</p>
         <button class="close" data-dismiss="alert">&times;</button>
         `;
     let b5Alert = new bootstrap.Alert(newAlert);
