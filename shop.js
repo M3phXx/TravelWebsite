@@ -1,5 +1,4 @@
 window.onload = () => {
-    discountFilter();
     if (JSON.parse(localStorage.getItem("theme"))) {
         let theme = JSON.parse(localStorage.getItem("theme"));
         setTheme(theme);
@@ -14,76 +13,68 @@ window.onload = () => {
     let cards = [
         {
             id: "1",
-            name: "Japonki",
-            type: "flips",
-            describe: "Around the World",
-            img: "./images/shoppingCard-Images/flops1.jpg",
+            name: "Bathing Shoes",
+            type: "flops",
+            describe: "",
+            img: "./images/shoppingCard-Images/flops/flopsBathingShoes.jpg",
             price: "50$",
             amount: "0"
         },
         {
             id: "2",
-            name: "Japonki22",
-            type: "flips",
-            describe: "Around the World",
-            img: "./images/shoppingCard-Images/flops1.jpg",
+            name: "Beach Sand Sea",
+            type: "flops",
+            describe: "",
+            img: "./images/shoppingCard-Images/flops/flopsBeachSandSea.jpg",
             price: "38$",
             discount: "51$",
             amount: "0"
         },
         {
             id: "3",
-            name: "Japonki311",
-            type: "flips",
-            describe: "Around the World",
-            img: "./images/shoppingCard-Images/flops1.jpg",
+            name: "Pink",
+            type: "flops",
+            describe: "",
+            img: "./images/shoppingCard-Images/flops/flopsPink.jpg",
             price: "50$",
             discount: "51$",
             amount: "0"
         },
         {
-            id: "8",
-            name: "Japonki3112",
-            type: "flips",
-            describe: "Around the World",
-            img: "./images/shoppingCard-Images/flops1.jpg",
+            id: "4",
+            name: "Travel Lake",
+            type: "shoes",
+            describe: "",
+            img: "./images/shoppingCard-Images/shoes/shoesTravelLake.jpg",
             price: "50$",
             amount: "0"
         },
         {
-            id: "9",
-            name: "Japonki31",
-            type: "flips",
-            describe: "Around the World",
-            img: "./images/shoppingCard-Images/flops1.jpg",
+            id: "7",
+            name: "Sport",
+            type: "shoes",
+            describe: "",
+            img: "./images/shoppingCard-Images/shoes/shoesSport.jpg",
             price: "50$",
             amount: "0"
         },
         {
             id: "4",
-            name: "Japonki3",
-            type: "flips",
-            describe: "Around the World",
-            img: "./images/shoppingCard-Images/flops1.jpg",
+            name: "Forest",
+            type: "shoes",
+            describe: "",
+            img: "./images/shoppingCard-Images/shoes/shoesForest.jpg",
             price: "50$",
             amount: "0"
         },
-        {
-            id: "5",
-            name: "Japonki4",
-            type: "shoes",
-            describe: "Around the World",
-            img: "./images/shoppingCard-Images/flops1.jpg",
-            price: "50$",
-            amount: "0"
-        }
     ]
-    if(!(JSON.parse(localStorage.getItem("cards"))))
-    {
-        localStorage.setItem("cards", JSON.stringify(cards));
-    }
+/*    if(!(JSON.parse(localStorage.getItem("cards"))))
+    {*/
+    localStorage.setItem("cards", JSON.stringify(cards));
     let cartAmount = document.getElementById("cartAmount");
     cartAmount.innerHTML = JSON.parse(localStorage.getItem("cartAmount"));
+
+    discountFilter();
 }
 function changeTheme() {
     let theme = JSON.parse(localStorage.getItem("theme") || "[]");
@@ -239,7 +230,7 @@ function newAlert() {
         navContainer.appendChild(newAlert);
         setTimeout(()=>{
             b5Alert.close();
-        },4000);
+        },5000);
 }
 function orderProducts() {
     newAlert();
