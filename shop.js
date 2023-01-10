@@ -1,4 +1,5 @@
 window.onload = () => {
+    /* Ustawia Theme */
     if (JSON.parse(localStorage.getItem("theme"))) {
         let theme = JSON.parse(localStorage.getItem("theme"));
         setTheme(theme);
@@ -10,6 +11,7 @@ window.onload = () => {
         theme[2] = "0.125";
         localStorage.setItem("theme", JSON.stringify(theme));
     }
+    /* Karty */
     let cards = [
         {
             id: "1",
@@ -35,7 +37,7 @@ window.onload = () => {
             name: "Pink",
             type: "flops",
             describe: "",
-            img: "./images/shoppingCard-Images/flops/flopsPink.jpg",
+            img: "./images/shoppingCard-Images/flops/flopsbeach.jpg",
             price: "34.99$",
             discount: "40$",
             amount: "0"
@@ -50,7 +52,7 @@ window.onload = () => {
             amount: "0"
         },
         {
-            id: "7",
+            id: "5",
             name: "Sport",
             type: "shoes",
             describe: "",
@@ -60,7 +62,7 @@ window.onload = () => {
             amount: "0"
         },
         {
-            id: "4",
+            id: "6",
             name: "Forest",
             type: "shoes",
             describe: "",
@@ -69,7 +71,7 @@ window.onload = () => {
             amount: "0"
         },
         {
-            id: "4",
+            id: "7",
             name: "City",
             type: "sunglasses",
             describe: "",
@@ -78,7 +80,7 @@ window.onload = () => {
             amount: "0"
         },
         {
-            id: "4",
+            id: "8",
             name: "Shades Eyewear",
             type: "sunglasses",
             describe: "",
@@ -87,22 +89,37 @@ window.onload = () => {
             amount: "0"
         },
         {
-            id: "4",
-            name: "ShadesEyewear",
+            id: "9",
+            name: "Fashion",
             type: "sunglasses",
             describe: "",
-            img: "./images/shoppingCard-Images/sunglasses/sunglassesShadesEyewear.jpg",
+            img: "./images/shoppingCard-Images/sunglasses/sunglassesFashion.jpg",
             price: "30$",
             discount: "39.99$",
             amount: "0"
         },
+
+        {
+            id: "10",
+            name: "ShadesEyewear",
+            type: "sunglasses",
+            describe: "",
+            img: "./images/shoppingCard-Images/sunglasses/sunglassesSwimming.jpg",
+            price: "15$",
+            discount: "29.99$",
+            amount: "0"
+        }
+        
     ]
-/*    if(!(JSON.parse(localStorage.getItem("cards"))))
-    {*/
+    /* Tworzy localCards */
+    if(!(JSON.parse(localStorage.getItem("cards"))))
+    {
     localStorage.setItem("cards", JSON.stringify(cards));
+    }
     let cartAmount = document.getElementById("cartAmount");
     cartAmount.innerHTML = JSON.parse(localStorage.getItem("cartAmount"));
 
+    /* Wyswietla karty */
     discountFilter();
 }
 function changeTheme() {
@@ -263,10 +280,14 @@ function orderProducts() {
     clearCart();
     let cartAmount = document.getElementById("cartAmount");
     cartAmount.innerHTML = "";
-    let localProducts = JSON.parse(localStorage.getItem("cards"));
+    let localProducts = JSON.parse(localStorage.getItem("cards")); 
     let clearAmount = localProducts.filter((e)=>{
+        /*zeruje localAmount */
         e.amount = "0";
         return e;
     });
     localStorage.setItem("cards", JSON.stringify(clearAmount));
+    let amount = 0;
+    localStorage.setItem("cartAmount", JSON.stringify(amount))
+    discountFilter();
 }
