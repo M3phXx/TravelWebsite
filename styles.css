@@ -227,6 +227,26 @@ footer a {
 .filterMenu {
     text-align: center;
 }
+.priceFilter {
+    width: 38%;
+}
+.minmax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filterButton {
+    text-decoration: none;
+    background-color: rgb(33, 125, 33);
+}
+.filterButton:hover {
+    box-shadow: 5px 5px 5px black;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(33, 125, 33);
+}
+.filterButton:active {
+    transform: scale(0.95);
+}
 #asideButton {
     text-decoration: none;
     margin-bottom: 15px;

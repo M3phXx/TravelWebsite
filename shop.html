@@ -104,10 +104,19 @@
                 <div class="filters">
                     <h4 class="mb-5">Filters</h4>
                     <div>
-                        <a type="button" id="asideButton" onclick="discountFilter()">Discounts</a>
+                        <button class="filterButton" onclick="discountFilter()">Discounts</button>
                     </div>
+                    <hr>
                     <div>
-                        <a type="button" id="asideButton">Price range:</a>
+                        <p class="mb-3" type="button">Price range:</p>
+                        <div class="minmax mb-1">
+                            <input type="text" class="priceFilter" id="dicountFilterMin" onkeyup="filterDiscounts('min')">
+                            <label for="min">Min</label>
+                        </div>
+                        <div class="minmax mb-1">
+                            <input type="text" class="priceFilter" id="dicountFilterMax" onkeyup="filterDiscounts('max')">
+                            <label for="max">Max</label>
+                        </div>
                     </div>
                 </div>
             </div>
