@@ -48,32 +48,26 @@
                         <li><a type="button" class="dropdown-item" onclick="listProducts('flops')">Flips</a></li>
                     </ul>
                 </div>
-                <div class="dropdownItem">
-                    <a data-toggle="dropdown" href="" class="nav-link text-white">Sunglasses</a>
-                    <ul class="dropdown-menu">
-                        <li><a type="button" class="dropdown-item">Shoes</a></li>
-                        <li><a type="button" class="dropdown-item">Flops</a></li>
-                    </ul>
-                </div>
+                <a type="button" class="nav-link text-white" onclick="listProducts('sunglasses')">Sunglasses</a>
                 <div class="dropdownItem">
                     <a data-toggle="dropdown" href="" class="nav-link text-white">SuitCases</a>
                     <ul class="dropdown-menu">
-                        <li><a type="button" class="dropdown-item">Shoes</a></li>
-                        <li><a type="button" class="dropdown-item">Flops</a></li>
+                        <li><a type="button" class="dropdown-item" onclick="listProducts('shoes')">Shoes</a></li>
+                        <li><a type="button" class="dropdown-item" onclick="listProducts('flops')">Flips</a></li>
                     </ul>
                 </div>
                 <div class="dropdownItem">
                     <a data-toggle="dropdown" href="" class="nav-link text-white">Accessories</a>
                     <ul class="dropdown-menu">
-                        <li><a type="button" class="dropdown-item">Shoes</a></li>
-                        <li><a type="button" class="dropdown-item">Flops</a></li>
+                        <li><a type="button" class="dropdown-item" onclick="listProducts('shoes')">Shoes</a></li>
+                        <li><a type="button" class="dropdown-item" onclick="listProducts('flops')">Flips</a></li>
                     </ul>
                 </div>
                 <div class="dropdownItem">
                     <a data-toggle="dropdown" href="" class="nav-link text-white">Beer</a>
                     <ul class="dropdown-menu">
-                        <li><a type="button" class="dropdown-item">Shoes</a></li>
-                        <li><a type="button" class="dropdown-item">Flips</a></li>
+                        <li><a type="button" class="dropdown-item" onclick="listProducts('shoes')">Shoes</a></li>
+                        <li><a type="button" class="dropdown-item" onclick="listProducts('flops')">Flips</a></li>
                     </ul>
                 </div>
             </ul>
@@ -104,8 +98,10 @@
 
                 </div>
                 <div class="cartButtonContainer">
-                    <button class="btn btn-warning" type="button" data-dismiss="modal" onclick="orderProducts()">Order</button>
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal" onclick="clearCart()">Close</button>
+                    <button class="btn btn-warning" type="button" data-dismiss="modal"
+                        onclick="orderProducts()">Order</button>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal"
+                        onclick="clearCart()">Close</button>
                 </div>
             </div>
         </div>
@@ -113,7 +109,8 @@
     </div>
     <!--cartBody-->
     <div class="cardBody">
-        <div class="row container">
+        <div class="container">
+            <div class="row">
             <!--cartAside-->
             <div class="filterMenu col-4 col-sm-3 col-md-2">
                 <div class="filters">

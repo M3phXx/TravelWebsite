@@ -17,7 +17,7 @@ window.onload = () => {
             type: "flops",
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsBathingShoes.jpg",
-            price: "50$",
+            price: "34.99$",
             amount: "0"
         },
         {
@@ -26,8 +26,8 @@ window.onload = () => {
             type: "flops",
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsBeachSandSea.jpg",
-            price: "38$",
-            discount: "51$",
+            price: "39.99$",
+            discount: "50$",
             amount: "0"
         },
         {
@@ -36,8 +36,8 @@ window.onload = () => {
             type: "flops",
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsPink.jpg",
-            price: "50$",
-            discount: "51$",
+            price: "34.99$",
+            discount: "40$",
             amount: "0"
         },
         {
@@ -46,7 +46,7 @@ window.onload = () => {
             type: "shoes",
             describe: "",
             img: "./images/shoppingCard-Images/shoes/shoesTravelLake.jpg",
-            price: "50$",
+            price: "89.99$",
             amount: "0"
         },
         {
@@ -55,7 +55,8 @@ window.onload = () => {
             type: "shoes",
             describe: "",
             img: "./images/shoppingCard-Images/shoes/shoesSport.jpg",
-            price: "50$",
+            price: "85$",
+            discount: "99.99$",
             amount: "0"
         },
         {
@@ -64,7 +65,35 @@ window.onload = () => {
             type: "shoes",
             describe: "",
             img: "./images/shoppingCard-Images/shoes/shoesForest.jpg",
-            price: "50$",
+            price: "89.99$",
+            amount: "0"
+        },
+        {
+            id: "4",
+            name: "City",
+            type: "sunglasses",
+            describe: "",
+            img: "./images/shoppingCard-Images/sunglasses/sunglassesCity.jpg",
+            price: "49.99$",
+            amount: "0"
+        },
+        {
+            id: "4",
+            name: "Shades Eyewear",
+            type: "sunglasses",
+            describe: "",
+            img: "./images/shoppingCard-Images/sunglasses/sunglassesShadesEyewear.jpg",
+            price: "44.49$",
+            amount: "0"
+        },
+        {
+            id: "4",
+            name: "ShadesEyewear",
+            type: "sunglasses",
+            describe: "",
+            img: "./images/shoppingCard-Images/sunglasses/sunglassesShadesEyewear.jpg",
+            price: "30$",
+            discount: "39.99$",
             amount: "0"
         },
     ]
@@ -87,7 +116,6 @@ function changeTheme() {
         theme[0] = "white";
         theme[1] = "30";
         theme[2] = "0.875"
-        console.log("xD");
     }
     setTheme(theme);
     localStorage.setItem("theme", JSON.stringify(theme));
@@ -139,7 +167,6 @@ function discountFilter() {
             return e.type;
         }
     });
-    console.log(filteredCards);
     let src = document.getElementById("cards");
     addCards(filteredCards, src);
 }
@@ -156,7 +183,7 @@ function addCards(newCards, source) {
             discount = ``;
         }
         source.innerHTML += `
-        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card mt-3">
             <img src="${newCards[i].img}" alt="" class="w-100" height="200px">
             <h4 class="card-header">${newCards[i].name}</h4>
@@ -190,7 +217,6 @@ function changeAmount(sign , cardId) {
             if(parseInt(cardAmount.innerHTML) < 9){
             cardAmount.innerHTML = `${parseInt(cardAmount.innerHTML) + 1}`;
             specificCard[0].amount = parseInt(specificCard[0].amount) + 1;
-            console.log(cardAmount.innerHTML);
             }
         break;
         case "-":
