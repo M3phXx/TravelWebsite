@@ -29,7 +29,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsBeachSandSea.jpg",
             price: "19",
-            discount: "50",
+            discount: "25",
             amount: "0"
         },
         {
@@ -39,7 +39,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsbeach.jpg",
             price: "14",
-            discount: "40",
+            discount: "20",
             amount: "0"
         },
         {
