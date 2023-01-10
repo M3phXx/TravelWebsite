@@ -115,7 +115,7 @@ window.onload = () => {
             type: "suitcases",
             describe: "",
             img: "./images/shoppingCard-Images/suitcases/suitcasesBox.jpg",
-            price: "115.99$",
+            price: "115$",
             amount: "0"
         },
         {
@@ -183,6 +183,116 @@ window.onload = () => {
             discount: "35.99$",
             amount: "0"
         },
+        {
+            id: "19",
+            name: "Female Beauty",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesFemaleBeauty.jpg",
+            price: "14.99$",
+            amount: "0"
+        },
+        {
+            id: "20",
+            name: "Frog",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesFrog.jpg",
+            price: "9.99$",
+            amount: "0"
+        },
+        {
+            id: "21",
+            name: "Gold Ring",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesGoldRing.jpg",
+            price: "399$",
+            discount: "419$",
+            amount: "0"
+        },
+        {
+            id: "22",
+            name: "Memory Bank",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesMemoryBank.jpg",
+            price: "20-50$",
+            amount: "0"
+        },
+        {
+            id: "23",
+            name: "Necklace",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesNecklace.jpg",
+            price: "24.99$",
+            amount: "0"
+        },
+        {
+            id: "24",
+            name: "Snow",
+            type: "Organic Pottery",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesOrganicPottery.jpg",
+            price: "14.99$",
+            amount: "0"
+        },
+        {
+            id: "25",
+            name: "Pendant",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesPendant.jpg",
+            price: "35.99$",
+            amount: "0"
+        },
+        {
+            id: "26",
+            name: "Pocket Watch",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesPocketWatch.jpg",
+            price: "44.99$",
+            discount: "49.99$",
+            amount: "0"
+        },
+        {
+            id: "227",
+            name: "Polaroid Camera",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesPolaroidCamera.jpg",
+            price: "149$",
+            amount: "0"
+        },
+        {
+            id: "28",
+            name: "Proffesional Camera",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesProffesionalCamera.jpg",
+            price: "999$",
+            amount: "0"
+        },
+        {
+            id: "29",
+            name: "Proffesional Drone",
+            type: "accessories",
+            describe: "",
+            img: "./images/shoppingCard-Images/accessories/accessoriesProffesionalDrone.jpg",
+            price: "1699$",
+            amount: "0"
+        },
+        {
+            id: "30",
+            name: "Sneakers Jordans",
+            type: "shoes",
+            describe: "",
+            img: "./images/shoppingCard-Images/shoes/shoesSneakersJordans.jpg",
+            price: "44.99$",
+            amount: "0"
+        }
     ]
     /* Tworzy localCards */
     if(!(JSON.parse(localStorage.getItem("cards"))))
