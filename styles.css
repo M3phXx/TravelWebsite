@@ -34,6 +34,10 @@ body {
     height: 200px;
     border-radius: 2px;
 }
+.cart-img-top2 {
+    height: 150px;
+    border-radius: 2px;
+}
 .card {
     height: 340px;
     border: none;

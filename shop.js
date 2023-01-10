@@ -15,11 +15,11 @@ window.onload = () => {
     let cards = [
         {
             id: "1",
-            name: "Bathing Shoes",
+            name: "Summer",
             type: "flops",
             describe: "",
-            img: "./images/shoppingCard-Images/flops/flopsBathingShoes.jpg",
-            price: "34.99$",
+            img: "./images/shoppingCard-Images/flops/flopsSummer.jpg",
+            price: "14$",
             amount: "0"
         },
         {
@@ -28,7 +28,7 @@ window.onload = () => {
             type: "flops",
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsBeachSandSea.jpg",
-            price: "39.99$",
+            price: "19$",
             discount: "50$",
             amount: "0"
         },
@@ -38,7 +38,7 @@ window.onload = () => {
             type: "flops",
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsbeach.jpg",
-            price: "34.99$",
+            price: "14$",
             discount: "40$",
             amount: "0"
         },
@@ -48,7 +48,7 @@ window.onload = () => {
             type: "shoes",
             describe: "",
             img: "./images/shoppingCard-Images/shoes/shoesTravelLake.jpg",
-            price: "89.99$",
+            price: "89$",
             amount: "0"
         },
         {
@@ -58,7 +58,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/shoes/shoesSport.jpg",
             price: "85$",
-            discount: "99.99$",
+            discount: "99$",
             amount: "0"
         },
         {
@@ -67,7 +67,7 @@ window.onload = () => {
             type: "shoes",
             describe: "",
             img: "./images/shoppingCard-Images/shoes/shoesForest.jpg",
-            price: "89.99$",
+            price: "89$",
             amount: "0"
         },
         {
@@ -76,7 +76,7 @@ window.onload = () => {
             type: "sunglasses",
             describe: "",
             img: "./images/shoppingCard-Images/sunglasses/sunglassesCity.jpg",
-            price: "49.99$",
+            price: "19$",
             amount: "0"
         },
         {
@@ -85,7 +85,7 @@ window.onload = () => {
             type: "sunglasses",
             describe: "",
             img: "./images/shoppingCard-Images/sunglasses/sunglassesShadesEyewear.jpg",
-            price: "44.49$",
+            price: "24$",
             amount: "0"
         },
         {
@@ -95,7 +95,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/sunglasses/sunglassesFashion.jpg",
             price: "30$",
-            discount: "39.99$",
+            discount: "29$",
             amount: "0"
         },
 
@@ -106,7 +106,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/sunglasses/sunglassesSwimming.jpg",
             price: "15$",
-            discount: "29.99$",
+            discount: "19$",
             amount: "0"
         },
         {
@@ -124,7 +124,7 @@ window.onload = () => {
             type: "suitcases",
             describe: "",
             img: "./images/shoppingCard-Images/suitcases/suitcasesVintageOpen.jpg",
-            price: "79.99$",
+            price: "79$",
             amount: "0"
         },
         {
@@ -133,8 +133,8 @@ window.onload = () => {
             type: "suitcases",
             describe: "",
             img: "./images/shoppingCard-Images/suitcases/suitcaseTeddyBear.jpg",
-            price: "79.99$",
-            discount: "89.99$",
+            price: "79$",
+            discount: "89$",
             amount: "0"
         },
         {
@@ -143,7 +143,7 @@ window.onload = () => {
             type: "backpacks",
             describe: "",
             img: "./images/shoppingCard-Images/backpacks/backpacksArt.jpg",
-            price: "22.99$",
+            price: "22$",
             amount: "0"
         },
         {
@@ -152,7 +152,7 @@ window.onload = () => {
             type: "backpacks",
             describe: "",
             img: "./images/shoppingCard-Images/backpacks/backpacksOutdoor.jpg",
-            price: "35.99$",
+            price: "35$",
             amount: "0"
         },
         {
@@ -161,7 +161,7 @@ window.onload = () => {
             type: "backpacks",
             describe: "",
             img: "./images/shoppingCard-Images/backpacks/backpacksParkWalk.jpg",
-            price: "19.99$",
+            price: "19$",
             amount: "0"
         },
         {
@@ -170,7 +170,7 @@ window.onload = () => {
             type: "backpacks",
             describe: "",
             img: "./images/shoppingCard-Images/backpacks/backpacksSchool.jpg",
-            price: "25.99$",
+            price: "25$",
             amount: "0"
         },
         {
@@ -179,8 +179,8 @@ window.onload = () => {
             type: "backpacks",
             describe: "",
             img: "./images/shoppingCard-Images/backpacks/backpacksSnow.jpg",
-            price: "29.99$",
-            discount: "35.99$",
+            price: "29$",
+            discount: "35$",
             amount: "0"
         },
         {
@@ -189,7 +189,7 @@ window.onload = () => {
             type: "accessories",
             describe: "",
             img: "./images/shoppingCard-Images/accessories/accessoriesFemaleBeauty.jpg",
-            price: "14.99$",
+            price: "14$",
             amount: "0"
         },
         {
@@ -198,7 +198,7 @@ window.onload = () => {
             type: "accessories",
             describe: "",
             img: "./images/shoppingCard-Images/accessories/accessoriesFrog.jpg",
-            price: "9.99$",
+            price: "9$",
             amount: "0"
         },
         {
@@ -217,7 +217,7 @@ window.onload = () => {
             type: "accessories",
             describe: "",
             img: "./images/shoppingCard-Images/accessories/accessoriesMemoryBank.jpg",
-            price: "20-50$",
+            price: "~35$",
             amount: "0"
         },
         {
@@ -226,7 +226,7 @@ window.onload = () => {
             type: "accessories",
             describe: "",
             img: "./images/shoppingCard-Images/accessories/accessoriesNecklace.jpg",
-            price: "24.99$",
+            price: "24$",
             amount: "0"
         },
         {
@@ -235,7 +235,7 @@ window.onload = () => {
             type: "Organic Pottery",
             describe: "",
             img: "./images/shoppingCard-Images/accessories/accessoriesOrganicPottery.jpg",
-            price: "14.99$",
+            price: "14$",
             amount: "0"
         },
         {
@@ -244,7 +244,7 @@ window.onload = () => {
             type: "accessories",
             describe: "",
             img: "./images/shoppingCard-Images/accessories/accessoriesPendant.jpg",
-            price: "35.99$",
+            price: "35$",
             amount: "0"
         },
         {
@@ -253,8 +253,7 @@ window.onload = () => {
             type: "accessories",
             describe: "",
             img: "./images/shoppingCard-Images/accessories/accessoriesPocketWatch.jpg",
-            price: "44.99$",
-            discount: "49.99$",
+            price: "44$",
             amount: "0"
         },
         {
@@ -290,9 +289,63 @@ window.onload = () => {
             type: "shoes",
             describe: "",
             img: "./images/shoppingCard-Images/shoes/shoesSneakersJordans.jpg",
-            price: "44.99$",
+            price: "44$",
             amount: "0"
-        }
+        },
+        {
+            id: "31",
+            name: "Barrel Aged",
+            type: "alcohols",
+            describe: "",
+            img: "./images/shoppingCard-Images/alcohols/alcoholsBarrelAged.jpg",
+            price: "5$",
+            amount: "0"
+        },
+        {
+            id: "32",
+            name: "BlueMoon",
+            type: "alcohols",
+            describe: "",
+            img: "./images/shoppingCard-Images/alcohols/alcoholsBlueMoon.jpg",
+            price: "4$",
+            amount: "0"
+        },
+        {
+            id: "33",
+            name: "Dark Porter",
+            type: "alcohols",
+            describe: "",
+            img: "./images/shoppingCard-Images/alcohols/alcoholsDarkPorter.jpg",
+            price: "6$",
+            amount: "0"
+        },
+        {
+            id: "34",
+            name: "Degustations",
+            type: "alcohols",
+            describe: "",
+            img: "./images/shoppingCard-Images/alcohols/alcoholsDegustations.jpg",
+            price: "~30$",
+            amount: "0"
+        },
+        {
+            id: "35",
+            name: "Drinks",
+            type: "alcohols",
+            describe: "",
+            img: "./images/shoppingCard-Images/alcohols/alcoholsDrinks.jpg",
+            price: "~20$",
+            amount: "0"
+        },
+        {
+            id: "36",
+            name: "Shots",
+            type: "alcohols",
+            describe: "",
+            img: "./images/shoppingCard-Images/alcohols/alcoholsShots.jpg",
+            price: "~10$",
+            amount: "0"
+        },
     ]
     /* Tworzy localCards */
     if(!(JSON.parse(localStorage.getItem("cards"))))
@@ -385,7 +438,7 @@ function addCards(newCards, source) {
         source.innerHTML += `
         <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card mt-3">
-            <img src="${newCards[i].img}" alt="" class="w-100" height="200px">
+            <img src="${newCards[i].img}" alt="" class="w-100 cart-img-top2" height="200px">
             <h4 class="card-header">${newCards[i].name}</h4>
             <div class="card-body">
             <h6>${newCards[i].type}<h6>
