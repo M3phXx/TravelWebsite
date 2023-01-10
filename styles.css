@@ -241,6 +241,7 @@ footer a {
 .filterButton {
     text-decoration: none;
     background-color: rgb(33, 125, 33);
+    border-radius: 3px;
 }
 .filterButton:hover {
     box-shadow: 5px 5px 5px black;
