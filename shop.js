@@ -32,6 +32,24 @@ window.onload = () => {
         },
         {
             id: "3",
+            name: "Japonki311",
+            type: "flips",
+            describe: "Around the World",
+            img: "./images/shoppingCard-Images/flops1.jpg",
+            price: "50$",
+            amount: "0"
+        },
+        {
+            id: "8",
+            name: "Japonki3112",
+            type: "flips",
+            describe: "Around the World",
+            img: "./images/shoppingCard-Images/flops1.jpg",
+            price: "50$",
+            amount: "0"
+        },
+        {
+            id: "9",
             name: "Japonki31",
             type: "flips",
             describe: "Around the World",
@@ -40,7 +58,7 @@ window.onload = () => {
             amount: "0"
         },
         {
-            id: "3",
+            id: "4",
             name: "Japonki3",
             type: "flips",
             describe: "Around the World",
@@ -49,7 +67,7 @@ window.onload = () => {
             amount: "0"
         },
         {
-            id: "4",
+            id: "5",
             name: "Japonki4",
             type: "shoes",
             describe: "Around the World",

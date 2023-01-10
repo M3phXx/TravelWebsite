@@ -51,6 +51,9 @@ a.disabled {
 .page-item {
     cursor: default;
 }
+.dropdown-item:hover {
+    background-color:rgb(125, 125, 125);
+}
 footer a {
     color: #aaaaab;
 }
@@ -222,6 +225,9 @@ footer a {
     margin-bottom: 15px;
 }
                                     /*---------products---------*/
+.cardBody {
+    margin-bottom: 60px;
+}
 .cardFooter {
     display: flex;
     flex-direction: row;
@@ -237,4 +243,9 @@ footer a {
 .modal-dialog {
     min-width: 50%;
     max-width: 1000px;
+}
+.bottom {
+background-color: red;
+height: 400px;
+width: 100%;
 }
