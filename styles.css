@@ -2,6 +2,7 @@ body {
     background-color: rgb(225, 225, 225);
     text-shadow: 0 0 0.6px #000000;
 }
+
 /*->->->->->->->Class<-<-<-<-<-<-<-*/
 .carousel-item {
     -webkit-background-size: cover;
@@ -9,16 +10,20 @@ body {
     background-size: cover;
 }
 
-.navbar, #footer {
+.navbar,
+#footer {
     background-color: rgb(44, 44, 44);
 }
+
 .navbar-link {
     text-decoration: none;
     color: white;
 }
+
 .ts {
     transform: scale(0.9);
 }
+
 .ad1 {
     background: url(images/vacation.png) no-repeat center center;
 }
@@ -30,63 +35,78 @@ body {
 .ad3 {
     background: url(images/panorama.jpg) no-repeat center center;
 }
+
 .card-img-top {
     height: 200px;
     border-radius: 2px;
 }
+
 .card-img-top2 {
     height: 150px;
     border-radius: 2px;
 }
+
 .card {
     height: 340px;
     border: none;
 }
+
 .form-box {
     width: 20rem;
 }
+
 .modal-content-text {
     padding: 5px 20px;
     font-family: 'Poppins', sans-serif;
 }
+
 a.disabled {
     pointer-events: none;
     cursor: default;
     text-decoration: none;
     color: #aaaaab;
 }
+
 .page-item {
     cursor: default;
 }
+
 .dropdown-item:hover {
-    background-color:rgb(125, 125, 125);
+    background-color: rgb(125, 125, 125);
 }
+
 footer a {
     color: #aaaaab;
 }
+
 /*->->->->->->->ID<-<-<-<-<-<-<-*/
 #footer {
     position: fixed;
     width: 100%;
-    bottom:0;
+    bottom: 0;
 }
+
 #newsletter-box {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     background-image: url(images/lake.jpg);
 }
+
 #navbarMenu {
     padding: 0px 10px;
 }
+
 #theme {
     padding: 0;
 }
+
 #postContainer {
     height: 1000px;
-    overflow-y:scroll;
-    direction:rtl;
+    overflow-y: scroll;
+    direction: rtl;
 }
+
 #login,
 #register {
     text-decoration: none;
@@ -102,17 +122,21 @@ footer a {
     position: absolute;
     top: -28px;
 }
+
 #cards {
     overflow-y: scroll;
     height: 720px;
 }
+
 #bottomCards {
     margin-bottom: 70px;
 }
+
 #info {
     text-decoration: none;
     color: rgb(0, 105, 0);
 }
+
 /*->->->->->->->media<-<-<-<-<-<-<-*/
 @media(max-width: 576px) {
 
@@ -178,18 +202,21 @@ footer a {
     background-color: #3f3f3f;
     border-radius: 20px;
 }
+
 /*------------------------------------------Shopping Cart--------------------------------------*/
-                                    /*---------Navbar---------*/
+/*---------Navbar---------*/
 .shopMenu {
     position: relative;
     display: flex;
     padding-left: 30%;
     justify-content: space-between;
 }
+
 .cartButtonContainer {
     text-align: center;
     margin-bottom: 15px;
 }
+
 .navbarBox {
     top: -15px;
     position: absolute;
@@ -198,23 +225,26 @@ footer a {
     border-bottom-right-radius: 150px;
     height: 70px;
     background-color: rgb(155, 44, 44);
-    color: rgb(33,225,33);
+    color: rgb(33, 225, 33);
     font-size: 40px;
     text-align: center;
 }
+
 .cart {
-        align-items: center;
-        height: 30px;
+    align-items: center;
+    height: 30px;
 }
+
 .bi-basket {
     margin-left: auto;
-    margin-right:30px;
+    margin-right: 30px;
     background-color: rgb(225, 225, 225);
-    color:#212529;
+    color: #212529;
     padding: 5px;
     font-size: 20px;
     border-radius: 4px;
 }
+
 .cartAmount {
     position: relative;
     top: -45px;
@@ -223,47 +253,58 @@ footer a {
     width: 20px;
     text-align: center;
 }
+
 .dropdownItem {
     position: relative;
 }
-                                    /*---------filterMenu---------*/
+
+/*---------filterMenu---------*/
 .filterMenu {
     text-align: center;
 }
+
 .priceFilter {
     width: 38%;
 }
+
 .minmax {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .filterButton {
     text-decoration: none;
     background-color: rgb(33, 125, 33);
     border-radius: 3px;
 }
+
 .filterButton:hover {
     box-shadow: 5px 5px 5px black;
     background-color: rgba(0, 0, 0, 0.1);
     color: rgb(33, 125, 33);
 }
+
 .filterButton:active {
     transform: scale(0.95);
 }
+
 #asideButton {
     text-decoration: none;
     margin-bottom: 15px;
 }
-                                    /*---------products---------*/
+
+/*---------products---------*/
 .cardBody {
     margin-bottom: 100px;
 }
+
 .cardFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .changeWidth {
     width: 33%;
     text-align: center;
@@ -271,12 +312,75 @@ footer a {
     transform: scale(1.1);
     cursor: pointer;
 }
+
 .modal-dialog {
     min-width: 50%;
     max-width: 1000px;
 }
+
 .bottom {
-background-color: red;
-height: 400px;
-width: 100%;
+    background-color: red;
+    height: 400px;
+    width: 100%;
+}
+/*------------------------------------------Hotels--------------------------------------*/
+.hotelsContainer {
+    margin-bottom: 70px;
+}
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.colContainer {
+    position: relative;
+    margin-right: 10px;
+}
+
+.colContainer>img {
+    height: 300px;
+    width: 400px;
+}
+
+.colContainerHeader,
+.colContainerFooter {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(225,225,225);
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.colContainerFooter {
+    top: 80%;
+}
+.logo {
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.6);
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(66,66,66);
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+}
+.logoInner {
+    background-color: rgb(30, 30, 30);
+    border-radius: 50%;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 150px; /* Need a specific value to work */
+    height: 150px;
+}
+.hotelsLogoText {
+    font-family: 'Poppins', sans-serif;
+    color: white; 
+    
+    font-size: 80px;
 }
