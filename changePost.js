@@ -22,7 +22,7 @@ function changePost(pageNumber) {
             <p>Itinerary for Bosnia-Herzegovina [10 Days] in the Balkans</p>
             <hr>
             <h5>How awesome is Bosnia-Herzegovina</h5>
-            <p>How awesome is Bosnia-Herzegovina – there are epic waterfalls, stunning clear rivers and
+            <p>How awesome is Bosnia-Herzegovina – There are epic waterfalls, stunning clear rivers and
                 charming little towns.
                 When considering a country in eastern Europe for a road trip, Bosnia & Herzegovina should be
                 one of the first countries on your mind. This idyllic country often gets overshadowed by its
@@ -55,7 +55,7 @@ function changePost(pageNumber) {
             <p>If you are planning to visit multiple places in the country, then Pula is the best place to
                 start your Croatia itinerary. Istria is the westernmost county in Croatia which makes it an
                 ideal place to begin your escapades around this mesmerizing country.</p>
-            <h5>How to Reach Pula?</h5>
+            <h5>?How to Reach Pula</h5>
             <p>It is simple to reach Pula by many different ways. We arrived here on bus from Slunj town
                 but below are all the other ways to enter Pula:</p>
         </div>`

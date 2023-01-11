@@ -34,7 +34,7 @@ window.onload = () => {
         },
         {
             id: "3",
-            name: "Pink",
+            name: "Hot Days",
             type: "flops",
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsbeach.jpg",
@@ -101,7 +101,7 @@ window.onload = () => {
 
         {
             id: "10",
-            name: "ShadesEyewear",
+            name: "Swimming Glasses",
             type: "sunglasses",
             describe: "",
             img: "./images/shoppingCard-Images/sunglasses/sunglassesSwimming.jpg",

@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="modal-header">
-                        <h5 class="modal-title">Logowanie</h5>
+                        <h5 class="modal-title">Login</h5>
                         <button class="close" data-dismiss="modal">
                             <span>&times;</span>
                         </button>
@@ -59,15 +59,15 @@
                     <div class="modal-body">
                         <label for="inputEmail" class="form-label">Email</label>
                         <input type="text" name="email" class="form-control mb-3" id="inputEmail"
-                            placeholder="Wpisz adres Email">
-                        <label for="inputPassword" class="form-label">Haslo</label>
-                        <input type="password" class="form-control mb-3" placeholder="Wpisz Haslo" id="inputPassword">
+                            placeholder="enter e-mail adress">
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control mb-3" placeholder="Enter password" id="inputPassword">
                         <input type="checkbox" class="form-check-input ml-2" onchange="localEmail()" id="inputCheckbox">
                         <label for="inputCheckbox" class="form-check-label ml-2">
-                            Zapamiętaj mnie
+                            Remember me
                         </label>
                         <span class="float-right mr-5"><a href="#" type="button" data-dismiss="modal"
-                                data-target="#modal1">Rejestracja</a></span>
+                                data-target="#modal1">Register</a></span>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-primary" type="button" onclick="checkInputs()"
@@ -253,22 +253,21 @@
                     <div class="form-box">
                         <form action="" novalidate class="row g-3 needs-validation">
                             <div class="col-12">
-                                <input type="text" placeholder="Wpisz email" class="form-control" id="emailInput"
+                                <input type="text" placeholder="Enter email" class="form-control" id="emailInput"
                                     required>
-                                <div class="valid-feedback">Email prawidłowy!</div>
-                                <div class="invalid-feedback">Wymagane wpisanie maila!</div>
+                                <div class="valid-feedback">Email correct!</div>
+                                <div class="invalid-feedback">Email required!</div>
                             </div>
                             <div class="col-12">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="agreement" required>
-                                    <label for="agreement" class="form-check-label text-light">Zgadzam się z
-                                        regulaminem</label>
-                                    <div class="invalid-feedback">Wymagane zaznaczenie</div>
+                                    <label for="agreement" class="form-check-label text-light">I aggree with the regulations</label>
+                                    <div class="invalid-feedback">Selection required</div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary btn-block" type="submit">
-                                    Zapisz mnie na newsletter
+                                    Sign me to the newsletter
                                 </button>
                             </div>
                         </form> <!--novalidate-html nie obsluzy nam tego-->
