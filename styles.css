@@ -50,6 +50,7 @@ body {
     height: 340px;
     border: none;
 }
+
 .transform:hover {
     transform: scale(1.02);
     transition: 0.5s;
@@ -86,7 +87,7 @@ footer a {
 
 /*->->->->->->->ID<-<-<-<-<-<-<-*/
 #footer {
-    width:100%;
+    width: 100%;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -332,10 +333,12 @@ footer a {
     height: 400px;
     width: 100%;
 }
+
 /*------------------------------------------Hotels--------------------------------------*/
 .hotelsContainer {
     margin-bottom: 70px;
 }
+
 .rowContainer {
     display: flex;
     flex-direction: column;
@@ -360,7 +363,7 @@ footer a {
     left: 0;
     right: 0;
     text-align: center;
-    color: rgb(225,225,225);
+    color: rgb(225, 225, 225);
     background-color: rgba(0, 0, 0, 0.65);
 }
 
@@ -368,35 +371,73 @@ footer a {
     top: 80%;
     width: 100%;
 }
+
 .logo {
     box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.6);
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: rgb(66,66,66);
+    background-color: rgb(66, 66, 66);
     text-align: center;
     margin: auto;
     border-radius: 50%;
 }
+
 .logoInner {
     background-color: rgb(30, 30, 30);
     border-radius: 50%;
-    position: absolute; 
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 150px; /* Need a specific value to work */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    /* Need a specific value to work */
     height: 150px;
 }
+
 .hotelsLogoText {
     text-shadow: 0 20px 10px #000000;
     padding-left: 35px;
     font-family: 'Dancing Script', cursive;
-    color: white; 
+    color: white;
     font-size: 100px;
 }
+
 .logoInner>img {
     margin-top: 5px;
     width: 100px;
+}
+
+.hotels-NumbersContainer {
+    height: 400px;
+    width: 100%;
+    background: url(images/hotels-Images/NumbersBackground.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.hotels-NumbersBody {
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+}
+
+.hotels-NumbersNumber {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
