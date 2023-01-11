@@ -481,12 +481,12 @@ function addCards(newCards, source) {
         }
         source.innerHTML += `
         <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card transform mt-3">
+        <div class="card transform mt-3 cursorDefault">
             <img src="${newCards[i].img}" alt="" class="w-100 card-img-top2" height="200px">
             <h4 class="card-header">${newCards[i].name}</h4>
             <div class="card-body">
             <h6>${newCards[i].type}<h6>
-            ${newCards[i].describe}
+            <p>${newCards[i].describe}<p>
             </div>
             <div class="card-footer cardFooter">
                 <del class="changeWidth text-danger">${discount}$</del>
