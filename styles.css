@@ -332,7 +332,7 @@ footer a {
 }
 .rowContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .colContainer {
@@ -342,7 +342,7 @@ footer a {
 
 .colContainer>img {
     height: 300px;
-    width: 400px;
+    width: 100%;
 }
 
 .colContainerHeader,
@@ -359,6 +359,7 @@ footer a {
 
 .colContainerFooter {
     top: 80%;
+    width: 100%;
 }
 .logo {
     box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.6);
