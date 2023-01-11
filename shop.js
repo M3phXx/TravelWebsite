@@ -28,9 +28,10 @@ window.onload = () => {
             type: "flops",
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsBeachSandSea.jpg",
-            price: "19",
+            price: "19$",
             discount: "25",
-            amount: "0"
+            amount: "0",
+            class: "text-success"
         },
         {
             id: "3",
@@ -40,7 +41,8 @@ window.onload = () => {
             img: "./images/shoppingCard-Images/flops/flopsbeach.jpg",
             price: "14",
             discount: "20",
-            amount: "0"
+            amount: "0",
+            class: "text-success"
         },
         {
             id: "4",
@@ -59,7 +61,8 @@ window.onload = () => {
             img: "./images/shoppingCard-Images/shoes/shoesSport.jpg",
             price: "85",
             discount: "99",
-            amount: "0"
+            amount: "0",
+            class: "text-success"
         },
         {
             id: "6",
@@ -96,7 +99,8 @@ window.onload = () => {
             img: "./images/shoppingCard-Images/sunglasses/sunglassesFashion.jpg",
             price: "20",
             discount: "29",
-            amount: "0"
+            amount: "0",
+            class: "text-success"
         },
 
         {
@@ -107,7 +111,8 @@ window.onload = () => {
             img: "./images/shoppingCard-Images/sunglasses/sunglassesSwimming.jpg",
             price: "15",
             discount: "19",
-            amount: "0"
+            amount: "0",
+            class: "text-success"
         },
         {
             id: "11",
@@ -135,7 +140,8 @@ window.onload = () => {
             img: "./images/shoppingCard-Images/suitcases/suitcaseTeddyBear.jpg",
             price: "79",
             discount: "89",
-            amount: "0"
+            amount: "0",
+            class: "text-success"
         },
         {
             id: "14",
@@ -181,7 +187,8 @@ window.onload = () => {
             img: "./images/shoppingCard-Images/backpacks/backpacksSnow.jpg",
             price: "29",
             discount: "35",
-            amount: "0"
+            amount: "0",
+            class: "text-success"
         },
         {
             id: "19",
@@ -209,7 +216,8 @@ window.onload = () => {
             img: "./images/shoppingCard-Images/accessories/accessoriesGoldRing.jpg",
             price: "399",
             discount: "419",
-            amount: "0"
+            amount: "0",
+            class: "text-success"
         },
         {
             id: "22",
@@ -456,8 +464,8 @@ function addCards(newCards, source) {
             ${newCards[i].describe}
             </div>
             <div class="card-footer cardFooter">
-                <del class="changeWidth text-danger">${discount}</del>
-                <h5 class="text-success">${newCards[i].price}$</h5>
+                <del class="changeWidth text-danger">${discount}$</del>
+                <h5 class="${newCards[i].class}">${newCards[i].price}$</h5>
                 <div class="changeWidth">
                     <a onclick="changeAmount('-', ${newCards[i].id})"><i class="bi bi-dash-circle-fill"></i></a>
                     <span id="${newCards[i].id}">${newCards[i].amount}</span>
