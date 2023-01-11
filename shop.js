@@ -94,7 +94,7 @@ window.onload = () => {
             type: "sunglasses",
             describe: "",
             img: "./images/shoppingCard-Images/sunglasses/sunglassesFashion.jpg",
-            price: "30",
+            price: "20",
             discount: "29",
             amount: "0"
         },
