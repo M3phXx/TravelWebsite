@@ -50,9 +50,10 @@ body {
     height: 340px;
     border: none;
 }
-.card:hover {
-    transform: scale(1.05);
+.transform:hover {
+    transform: scale(1.02);
     transition: 0.5s;
+    box-shadow: 4px 4px 10px black;
 }
 
 .form-box {

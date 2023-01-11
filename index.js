@@ -215,7 +215,7 @@ function addCards(newCards) {
     for (var i = 0; i < newCards.length; i++) {
         document.getElementById("cards").innerHTML += `
         <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card mt-3">
+        <div class="card transform mt-3">
             <img src=${newCards[i].img} alt="" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">${newCards[i].name}</h5>

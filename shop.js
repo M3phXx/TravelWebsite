@@ -28,7 +28,7 @@ window.onload = () => {
             type: "flops",
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsBeachSandSea.jpg",
-            price: "19$",
+            price: "19",
             discount: "25",
             amount: "0",
             class: "text-success"
@@ -265,7 +265,7 @@ window.onload = () => {
             amount: "0"
         },
         {
-            id: "227",
+            id: "27",
             name: "Polaroid Camera",
             type: "accessories",
             describe: "",
@@ -356,9 +356,35 @@ window.onload = () => {
         },
     ]
     /* Tworzy localCards */
-    if (!(JSON.parse(localStorage.getItem("cards")))) {
+    if(!(localStorage.getItem("cards"))){
         localStorage.setItem("cards", JSON.stringify(cards));
     }
+    let localCards = JSON.parse(localStorage.getItem("cards"));
+    let cardsWithAmount = localCards.filter((e) => {
+        if (e.amount > 0) {
+            return e;
+        }
+    });
+    let updatedCards = [];
+    cards.filter((e) => {
+        for (var i = 0; i < cardsWithAmount.length; i++) {
+            if (e.id == cardsWithAmount[i].id) {
+                e.amount = cardsWithAmount[i].amount;
+                updatedCards.push(e);
+                return;
+            }
+        }
+        updatedCards.push(e);
+    });
+    console.log(updatedCards);
+    if(localStorage.getItem("cards")){
+        localStorage.setItem("cards", JSON.stringify(updatedCards));
+        console.log(updatedCards);
+    }
+
+
+
+
     let cartAmount = document.getElementById("cartAmount");
     cartAmount.innerHTML = JSON.parse(localStorage.getItem("cartAmount"));
 
@@ -434,9 +460,8 @@ function filterDiscounts(minmax) {
     let cards = JSON.parse(localStorage.getItem("cards"));
     let minValue = document.getElementById("dicountFilterMin").value;
     let maxValue = document.getElementById("dicountFilterMax").value;
-    let priceRangeCards = cards.filter((e)=>{
-        if(parseInt(e.price) <= maxValue && parseInt(e.price) >= minValue)
-        {
+    let priceRangeCards = cards.filter((e) => {
+        if (parseInt(e.price) <= maxValue && parseInt(e.price) >= minValue) {
             return e;
         }
     });
@@ -456,7 +481,7 @@ function addCards(newCards, source) {
         }
         source.innerHTML += `
         <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card mt-3">
+        <div class="card transform mt-3">
             <img src="${newCards[i].img}" alt="" class="w-100 card-img-top2" height="200px">
             <h4 class="card-header">${newCards[i].name}</h4>
             <div class="card-body">
