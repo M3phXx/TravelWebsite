@@ -343,6 +343,7 @@ footer a {
 .colContainer>img {
     height: 300px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .colContainerHeader,
