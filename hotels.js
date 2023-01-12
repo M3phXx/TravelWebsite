@@ -28,7 +28,6 @@ function changeTheme() {
 }
 function setTheme() {
     let theme = JSON.parse(localStorage.getItem("theme"));
-    console.log(JSON.parse(localStorage.getItem("theme")));
     document.body.style.backgroundColor = `rgb(${theme[1]}, ${theme[1]}, ${theme[1]})`
 }
 /* --------------------------------------Counter-------------------------------------- */

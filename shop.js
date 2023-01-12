@@ -376,10 +376,8 @@ window.onload = () => {
         }
         updatedCards.push(e);
     });
-    console.log(updatedCards);
     if(localStorage.getItem("cards")){
         localStorage.setItem("cards", JSON.stringify(updatedCards));
-        console.log(updatedCards);
     }
 
 
