@@ -460,6 +460,7 @@ footer a {
     top: 2%;
     height: 28%;
     width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 .contact-Body-Box2 {
     background-color: rgb(225, 225, 225);
@@ -467,11 +468,32 @@ footer a {
     top:64.66%;
     height: 35.5%;
     width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
+
 .contact-Body-Box3 {
     position: absolute;
     width: 100%;
     height: 2vh;
     background-color: white;
     top: 133.1vh;
+}
+.contact-Body-Box4 {
+    background-color: red;
+    width: 100%;
+    height: 3vh;
+    top: 0;
+    position: fixed;
+}
+.gear1, .gear2 {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+}
+.gear1 {
+    left: 20px;
+}
+.gear2 {
+    right: 20px;
 }
