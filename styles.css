@@ -91,7 +91,7 @@ footer a {
     position: fixed;
     left: 0;
     bottom: 0;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 #newsletter-box {
@@ -429,14 +429,49 @@ footer a {
     width: 100%;
     height: 250px;
 }
+
 .hotel-NumbersImage {
     height: 100%;
-width: 100%;
+    width: 100%;
 }
+
 .hotels-NumbersNumber {
-    color:rgb(225, 225, 225);
+    color: rgb(225, 225, 225);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/*------------------------------------------Contact--------------------------------------*/
+.contact-navbar {
+    position:absolute;
+    top: 0;
+    width: 100%;
+}
+.contact-Body {
+    height: 135.1vh;
+    background: url("./images/contact-Images/Background.jpg") no-repeat center fixed;
+    background-size: 100% 100%;
+}
+.contact-Body-Box1 {
+    position: fixed;
+    background-color: rgb(225, 225, 225);
+    top: 2%;
+    height: 28%;
+    width: 100%;
+}
+.contact-Body-Box2 {
+    background-color: rgb(225, 225, 225);
+    position: absolute;
+    top:64.66%;
+    height: 35.5%;
+    width: 100%;
+}
+.contact-Body-Box3 {
+    position: absolute;
+    width: 100%;
+    height: 2vh;
+    background-color: white;
+    top: 133.1vh;
 }
