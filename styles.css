@@ -445,15 +445,17 @@ footer a {
 
 /*------------------------------------------Contact--------------------------------------*/
 .contact-navbar {
-    position:absolute;
+    position: absolute;
     top: 0;
     width: 100%;
 }
+
 .contact-Body {
     height: 135.1vh;
     background: url("./images/contact-Images/Background.jpg") no-repeat center fixed;
     background-size: 100% 100%;
 }
+
 .contact-Body-Box1 {
     position: fixed;
     background-color: rgb(225, 225, 225);
@@ -462,13 +464,14 @@ footer a {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
+
 .contact-Body-Box2 {
     background-color: rgb(225, 225, 225);
     position: absolute;
-    top:64.66%;
+    top: 64.66%;
     height: 35.5%;
     width: 100%;
-        border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .contact-Body-Box3 {
@@ -478,22 +481,38 @@ footer a {
     background-color: white;
     top: 133.1vh;
 }
+
 .contact-Body-Box4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: red;
     width: 100%;
     height: 3vh;
     top: 0;
     position: fixed;
 }
-.gear1, .gear2 {
+
+.gear1,
+.gear2 {
     width: 300px;
     height: 200px;
     position: absolute;
     top: -100px;
 }
+
 .gear1 {
     left: 20px;
 }
+
 .gear2 {
     right: 20px;
+}
+
+.steamPunk1,
+.steamPunk2 {
+    width: 100px;
+}
+.steamPunk2 {
+    transform: scaleX(-1);
 }
