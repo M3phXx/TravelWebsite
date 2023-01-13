@@ -6,7 +6,7 @@ window.onload = () => {
         document.getElementById("inputCheckbox").checked = true;
     }
     //Ustawia Theme
-    if(JSON.parse(localStorage.getItem("theme"))) {
+    if (JSON.parse(localStorage.getItem("theme"))) {
         let theme = JSON.parse(localStorage.getItem("theme"));
         setTheme(theme);
     }
