@@ -29,7 +29,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsBeachSandSea.jpg",
             price: "19",
-            discount: "25",
+            discount: "25$",
             amount: "0",
             class: "text-success"
         },
@@ -40,7 +40,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/flops/flopsbeach.jpg",
             price: "14",
-            discount: "20",
+            discount: "20$",
             amount: "0",
             class: "text-success"
         },
@@ -60,7 +60,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/shoes/shoesSport.jpg",
             price: "85",
-            discount: "99",
+            discount: "99$",
             amount: "0",
             class: "text-success"
         },
@@ -98,7 +98,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/sunglasses/sunglassesFashion.jpg",
             price: "20",
-            discount: "29",
+            discount: "29$",
             amount: "0",
             class: "text-success"
         },
@@ -110,7 +110,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/sunglasses/sunglassesSwimming.jpg",
             price: "15",
-            discount: "19",
+            discount: "19$",
             amount: "0",
             class: "text-success"
         },
@@ -139,7 +139,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/suitcases/suitcaseTeddyBear.jpg",
             price: "79",
-            discount: "89",
+            discount: "89$",
             amount: "0",
             class: "text-success"
         },
@@ -186,7 +186,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/backpacks/backpacksSnow.jpg",
             price: "29",
-            discount: "35",
+            discount: "35$",
             amount: "0",
             class: "text-success"
         },
@@ -215,7 +215,7 @@ window.onload = () => {
             describe: "",
             img: "./images/shoppingCard-Images/accessories/accessoriesGoldRing.jpg",
             price: "399",
-            discount: "419",
+            discount: "419$",
             amount: "0",
             class: "text-success"
         },
