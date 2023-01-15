@@ -487,7 +487,7 @@ function addCards(newCards, source) {
             <p>${newCards[i].describe}<p>
             </div>
             <div class="card-footer cardFooter">
-                <del class="changeWidth text-danger">${discount}$</del>
+                <del class="changeWidth text-danger">${discount}</del>
                 <h5 class="${newCards[i].class}">${newCards[i].price}$</h5>
                 <div class="changeWidth">
                     <a onclick="changeAmount('-', ${newCards[i].id})"><i class="bi bi-dash-circle-fill"></i></a>
